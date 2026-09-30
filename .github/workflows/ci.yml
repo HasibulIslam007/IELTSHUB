@@ -1,0 +1,78 @@
+name: Application checks
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: checks-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.5'
+          extensions: pdo_sqlite, pdo_pgsql, intl, mbstring, xml, dom, fileinfo, zip
+          coverage: none
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - uses: actions/cache@v4
+        with:
+          path: ~/.composer/cache/files
+          key: composer-${{ runner.os }}-${{ hashFiles('backend/composer.lock') }}
+      - run: composer install --working-dir=backend --no-interaction --prefer-dist
+      - run: npm ci
+      - name: Configure isolated test environment
+        run: |
+          cp backend/.env.example backend/.env
+          cd backend
+          php artisan key:generate --no-interaction
+      - run: npm test
+
+  browser:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.5'
+          extensions: pdo_sqlite, intl, mbstring, xml, dom, fileinfo, zip
+          coverage: none
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - run: composer install --working-dir=backend --no-interaction --prefer-dist
+      - run: npm ci
+      - uses: actions/cache@v4
+        with:
+          path: .local/browsers
+          key: playwright-${{ runner.os }}-${{ hashFiles('package-lock.json') }}
+      - run: npx playwright install --with-deps chromium
+        env:
+          PLAYWRIGHT_BROWSERS_PATH: .local/browsers
+      - name: Prepare application assets
+        run: |
+          cp backend/.env.example backend/.env
+          cd backend
+          php artisan key:generate --no-interaction
+          cd ..
+          npm run build
+      - run: npm run test:e2e
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: browser-results
+          path: |
+            playwright-report/
+            test-results/
+          retention-days: 7

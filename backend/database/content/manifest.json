@@ -1,0 +1,51 @@
+{
+  "purpose": "Original uncalibrated demonstration content",
+  "audio": "macOS synthesized voice; review platform license before production distribution",
+  "files": [
+    {
+      "path": "listening-1.txt",
+      "bytes": 719,
+      "sha256": "2b4ce6295c57cee118544e6da06601389dc6ab8fb48c58ab4e017d7c3b4a105c"
+    },
+    {
+      "path": "listening-1.wav",
+      "bytes": 1856772,
+      "sha256": "db9bc70ca2f8cc7c6cadddb9da449d51074fc622c99adf888b0a2a8645a75108"
+    },
+    {
+      "path": "listening-2.txt",
+      "bytes": 886,
+      "sha256": "600a5b6772d5c09f3e27bcf990dbf752d2da7c474e82745124b30ec172486019"
+    },
+    {
+      "path": "listening-2.wav",
+      "bytes": 2333956,
+      "sha256": "bbb719ab3a6f36e5415a2ca12bcdb33211bb74ea79eaaee0c8bdf517d27f6f9b"
+    },
+    {
+      "path": "listening-3.txt",
+      "bytes": 985,
+      "sha256": "8b52068008e2bf11f67bfae75d7b9048bb049cdb23d56562983c0a1ebeea7b38"
+    },
+    {
+      "path": "listening-3.wav",
+      "bytes": 2702596,
+      "sha256": "3d273aa7840b272a5aa695f605a7b99b0ea4bfb8faf89c8b9940d568b899ec24"
+    },
+    {
+      "path": "listening-4.txt",
+      "bytes": 1165,
+      "sha256": "d826600022dc9c545eeb9631591b9cdc73415d92d96b512a994e411863ec18bc"
+    },
+    {
+      "path": "listening-4.wav",
+      "bytes": 2969348,
+      "sha256": "74f48da6e506bb0f11aa20bc128bb66bfc99739f9ecb7574ff6824abf76b2098"
+    },
+    {
+      "path": "tests.json",
+      "bytes": 113625,
+      "sha256": "07fc7ee6fc174368dc143728a365dd9b5685c226cfd6341603037b90dc4725ba"
+    }
+  ]
+}

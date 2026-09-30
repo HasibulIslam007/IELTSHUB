@@ -1,0 +1,2435 @@
+[
+  {
+    "slug": "reading-library-sample",
+    "title": "A little reading, a real step forward",
+    "description": "Original demonstration material. Practise carefully, then explore the evidence behind every answer. This content is not a professionally validated IELTS test.",
+    "skill": "reading",
+    "test_type": "academic",
+    "duration_seconds": 600,
+    "draft": {
+      "sections": [
+        {
+          "id": "part1",
+          "title": "The library that lends more",
+          "passage": "A. In 2018, the coastal town of Bellwick opened a library inside a former railway station. The project was called Open Doors. Architect Maya Patel kept the original clock above the entrance, but replaced the ticket windows with reading desks. The council paid for construction; a neighbourhood association supplied second-hand furniture. The building opens at nine in the morning, six days a week, and closes on Mondays.\n\nB. Rather than buying every title immediately, the librarians first asked residents what they wanted to read. Gardening books were requested most often. A survey received 240 replies. A quiet room for independent study was created upstairs, while the ground floor includes a workshop and a children's corner. Large signs and a step-free entrance help visitors find their way. There are no café facilities inside the building.\n\nC. The library lends tools as well as books. Members may borrow a drill for seven days, but must attend a safety demonstration first. Sewing machines can only be used in the workshop. The service is free for residents. Visitors from outside Bellwick pay a small annual membership fee. Staff record each loan electronically, although paper receipts are available on request.\n\nD. An evaluation after the first year found that visits had doubled compared with the old library. However, the report did not measure changes in reading ability. Researcher Daniel Wu warned against assuming that attendance alone proves educational improvement. He recommended interviewing visitors again after three years. The council decided to maintain opening hours rather than extend them.\n\nBuilding plan: entering from the south, the information desk is directly ahead. To the west of the desk is the workshop; to the east is the children's corner. Stairs behind the desk lead to the quiet room upstairs. The north door opens onto a garden.",
+          "instructions": "Read carefully. Follow each question’s answer limit. Choices must match the wording shown.",
+          "questions": [
+            {
+              "id": "q1",
+              "type": "single_choice",
+              "prompt": "What was the building originally?",
+              "accepted": [
+                "A railway station"
+              ],
+              "explanation": "The passage explicitly states: A railway station.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "options": [
+                "A railway station",
+                "A school",
+                "A factory"
+              ]
+            },
+            {
+              "id": "q2",
+              "type": "short_answer",
+              "prompt": "What was the project called?",
+              "accepted": [
+                "Open Doors"
+              ],
+              "explanation": "The passage explicitly states: Open Doors.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 3,
+              "max_numbers": 1
+            },
+            {
+              "id": "q3",
+              "type": "true_false_not_given",
+              "prompt": "The library opens every day.",
+              "accepted": [
+                "False"
+              ],
+              "explanation": "Paragraph A says it closes on Mondays.",
+              "reference": "Use the corresponding paragraph or named location."
+            },
+            {
+              "id": "q4",
+              "type": "true_false_not_given",
+              "prompt": "The original entrance clock was kept.",
+              "accepted": [
+                "True"
+              ],
+              "explanation": "Paragraph A states that Maya Patel kept the original clock.",
+              "reference": "Use the corresponding paragraph or named location."
+            },
+            {
+              "id": "q5",
+              "type": "true_false_not_given",
+              "prompt": "The library has more than ten employees.",
+              "accepted": [
+                "Not Given"
+              ],
+              "explanation": "The number of employees is not supplied.",
+              "reference": "Use the corresponding paragraph or named location."
+            },
+            {
+              "id": "q6",
+              "type": "matching_headings",
+              "prompt": "Choose the best heading for paragraph B.",
+              "accepted": [
+                "Design informed by residents"
+              ],
+              "explanation": "The passage explicitly states: Design informed by residents.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "options": [
+                "Design informed by residents",
+                "A costly café",
+                "A new railway service"
+              ]
+            }
+          ]
+        }
+      ],
+      "answer_keys_reviewed": true,
+      "scoring": {
+        "reviewed": false
+      }
+    },
+    "sample": true,
+    "tags": [
+      "Getting started",
+      "Everyday life"
+    ]
+  },
+  {
+    "slug": "academic-reading-01",
+    "title": "A world of new ideas",
+    "description": "Original demonstration material. Practise carefully, then explore the evidence behind every answer. This content is not a professionally validated IELTS test.",
+    "skill": "reading",
+    "test_type": "academic",
+    "duration_seconds": 3600,
+    "draft": {
+      "sections": [
+        {
+          "id": "part1",
+          "title": "The library that lends more",
+          "passage": "A. In 2018, the coastal town of Bellwick opened a library inside a former railway station. The project was called Open Doors. Architect Maya Patel kept the original clock above the entrance, but replaced the ticket windows with reading desks. The council paid for construction; a neighbourhood association supplied second-hand furniture. The building opens at nine in the morning, six days a week, and closes on Mondays.\n\nB. Rather than buying every title immediately, the librarians first asked residents what they wanted to read. Gardening books were requested most often. A survey received 240 replies. A quiet room for independent study was created upstairs, while the ground floor includes a workshop and a children's corner. Large signs and a step-free entrance help visitors find their way. There are no café facilities inside the building.\n\nC. The library lends tools as well as books. Members may borrow a drill for seven days, but must attend a safety demonstration first. Sewing machines can only be used in the workshop. The service is free for residents. Visitors from outside Bellwick pay a small annual membership fee. Staff record each loan electronically, although paper receipts are available on request.\n\nD. An evaluation after the first year found that visits had doubled compared with the old library. However, the report did not measure changes in reading ability. Researcher Daniel Wu warned against assuming that attendance alone proves educational improvement. He recommended interviewing visitors again after three years. The council decided to maintain opening hours rather than extend them.\n\nBuilding plan: entering from the south, the information desk is directly ahead. To the west of the desk is the workshop; to the east is the children's corner. Stairs behind the desk lead to the quiet room upstairs. The north door opens onto a garden.",
+          "instructions": "Read carefully. Follow each question’s answer limit. Choices must match the wording shown.",
+          "questions": [
+            {
+              "id": "q1",
+              "type": "single_choice",
+              "prompt": "What was the building originally?",
+              "accepted": [
+                "A railway station"
+              ],
+              "explanation": "The passage explicitly states: A railway station.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "options": [
+                "A railway station",
+                "A school",
+                "A factory"
+              ]
+            },
+            {
+              "id": "q2",
+              "type": "short_answer",
+              "prompt": "What was the project called?",
+              "accepted": [
+                "Open Doors"
+              ],
+              "explanation": "The passage explicitly states: Open Doors.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 3,
+              "max_numbers": 1
+            },
+            {
+              "id": "q3",
+              "type": "true_false_not_given",
+              "prompt": "The library opens every day.",
+              "accepted": [
+                "False"
+              ],
+              "explanation": "Paragraph A says it closes on Mondays.",
+              "reference": "Use the corresponding paragraph or named location."
+            },
+            {
+              "id": "q4",
+              "type": "true_false_not_given",
+              "prompt": "The original entrance clock was kept.",
+              "accepted": [
+                "True"
+              ],
+              "explanation": "Paragraph A states that Maya Patel kept the original clock.",
+              "reference": "Use the corresponding paragraph or named location."
+            },
+            {
+              "id": "q5",
+              "type": "true_false_not_given",
+              "prompt": "The library has more than ten employees.",
+              "accepted": [
+                "Not Given"
+              ],
+              "explanation": "The number of employees is not supplied.",
+              "reference": "Use the corresponding paragraph or named location."
+            },
+            {
+              "id": "q6",
+              "type": "matching_headings",
+              "prompt": "Choose the best heading for paragraph B.",
+              "accepted": [
+                "Design informed by residents"
+              ],
+              "explanation": "The passage explicitly states: Design informed by residents.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "options": [
+                "Design informed by residents",
+                "A costly café",
+                "A new railway service"
+              ]
+            },
+            {
+              "id": "q7",
+              "type": "form_completion",
+              "prompt": "How many survey replies were received?",
+              "accepted": [
+                "240"
+              ],
+              "explanation": "The passage explicitly states: 240.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 3,
+              "max_numbers": 1
+            },
+            {
+              "id": "q8",
+              "type": "sentence_completion",
+              "prompt": "The most requested books were about _____.",
+              "accepted": [
+                "gardening"
+              ],
+              "explanation": "The passage explicitly states: gardening.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 3,
+              "max_numbers": 1
+            },
+            {
+              "id": "q9",
+              "type": "multiple_choice",
+              "prompt": "Which TWO facilities are on the ground floor?",
+              "accepted": [
+                "workshop",
+                "children's corner"
+              ],
+              "explanation": "The passage explicitly states: ['workshop', \"children's corner\"].",
+              "reference": "Use the corresponding paragraph or named location.",
+              "options": [
+                "workshop",
+                "children's corner",
+                "quiet room",
+                "café"
+              ],
+              "select_count": 2
+            },
+            {
+              "id": "q10",
+              "type": "table_completion",
+              "prompt": "Complete the loan table: drill — loan period of _____ days.",
+              "accepted": [
+                "seven"
+              ],
+              "explanation": "The passage explicitly states: seven.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 3,
+              "max_numbers": 1
+            },
+            {
+              "id": "q11",
+              "type": "note_completion",
+              "prompt": "Before borrowing a drill, members attend a _____.",
+              "accepted": [
+                "safety demonstration"
+              ],
+              "explanation": "The passage explicitly states: safety demonstration.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 3,
+              "max_numbers": 1
+            },
+            {
+              "id": "q12",
+              "type": "matching_information",
+              "prompt": "Which paragraph discusses limits of the evaluation?",
+              "accepted": [
+                "D"
+              ],
+              "explanation": "The passage explicitly states: D.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D"
+              ]
+            },
+            {
+              "id": "q13",
+              "type": "plan_label",
+              "prompt": "Label the room WEST of the information desk.",
+              "accepted": [
+                "workshop"
+              ],
+              "explanation": "The passage explicitly states: workshop.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 2,
+              "max_numbers": 0,
+              "diagram": "Accessible plan: entrance at south; desk in centre; room X west; children’s corner east; stairs north. Label X."
+            },
+            {
+              "id": "q14",
+              "type": "yes_no_not_given",
+              "prompt": "Daniel Wu believes attendance alone proves educational improvement.",
+              "accepted": [
+                "No"
+              ],
+              "explanation": "Paragraph D warns against making exactly that assumption.",
+              "reference": "Use the corresponding paragraph or named location."
+            }
+          ]
+        },
+        {
+          "id": "part2",
+          "title": "A living roof",
+          "passage": "A. The Green Roof Project began at Northbridge College in 2020. Botanist Elena Ross wanted to discover whether planted roofs could reduce summer heat in small buildings. Her team compared two identical sheds, one with a planted roof and one with a bare metal roof. Both sheds faced south and neither contained air conditioning. Sensors measured the indoor temperature every fifteen minutes.\n\nB. The researchers chose sedum because its thick leaves retain water. Beneath the plants lay eight centimetres of growing material, followed by a drainage mat and a waterproof membrane. Rainwater left the roof through an outlet on its eastern edge. The planted roof needed watering during the first month, but after that it relied on rainfall except during unusually dry weeks.\n\nC. On the hottest afternoon, the shed with the planted roof was four degrees cooler. In winter, the temperature difference was smaller. The team recorded 18 species of insects on the roof, compared with five near the bare shed. These observations suggest a benefit for wildlife, but the researchers did not investigate birds or small mammals. No chemicals were applied to either roof.\n\nD. Engineer Oliver Chen checked the structure before planting. Wet soil adds weight, so he reinforced two support beams. He argued that structural checks should precede any installation. Ross agreed but said maintenance costs also deserved attention. The project used volunteer labour for planting, while a grant covered sensors and materials.\n\nE. The college plans to extend the study to a taller building. The current results cannot automatically be applied to every roof: wind and shade may change performance. Ross recommends local trials instead of a single national design. She has not claimed that green roofs can replace parks.",
+          "instructions": "Read carefully. Follow each question’s answer limit. Choices must match the wording shown.",
+          "questions": [
+            {
+              "id": "q15",
+              "type": "short_answer",
+              "prompt": "Which plant did the team choose?",
+              "accepted": [
+                "sedum"
+              ],
+              "explanation": "The passage explicitly states: sedum.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 3,
+              "max_numbers": 1
+            },
+            {
+              "id": "q16",
+              "type": "single_choice",
+              "prompt": "Why was this plant selected?",
+              "accepted": [
+                "Its leaves retain water"
+              ],
+              "explanation": "The passage explicitly states: Its leaves retain water.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "options": [
+                "Its flowers attract birds",
+                "Its leaves retain water",
+                "It grows without soil"
+              ]
+            },
+            {
+              "id": "q17",
+              "type": "summary_completion",
+              "prompt": "Sensors measured temperature every _____ minutes.",
+              "accepted": [
+                "fifteen"
+              ],
+              "explanation": "The passage explicitly states: fifteen.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 3,
+              "max_numbers": 1
+            },
+            {
+              "id": "q18",
+              "type": "true_false_not_given",
+              "prompt": "Both sheds had air conditioning.",
+              "accepted": [
+                "False"
+              ],
+              "explanation": "Neither shed contained air conditioning.",
+              "reference": "Use the corresponding paragraph or named location."
+            },
+            {
+              "id": "q19",
+              "type": "true_false_not_given",
+              "prompt": "The study investigated small mammals.",
+              "accepted": [
+                "False"
+              ],
+              "explanation": "Paragraph C explicitly says small mammals were not investigated.",
+              "reference": "Use the corresponding paragraph or named location."
+            },
+            {
+              "id": "q20",
+              "type": "matching_features",
+              "prompt": "Who checked the supporting structure?",
+              "accepted": [
+                "Oliver Chen"
+              ],
+              "explanation": "The passage explicitly states: Oliver Chen.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "options": [
+                "Elena Ross",
+                "Oliver Chen"
+              ]
+            },
+            {
+              "id": "q21",
+              "type": "short_answer",
+              "prompt": "How many support beams were reinforced?",
+              "accepted": [
+                "two"
+              ],
+              "explanation": "The passage explicitly states: two.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 3,
+              "max_numbers": 1
+            },
+            {
+              "id": "q22",
+              "type": "diagram_label",
+              "prompt": "Label the layer directly below the growing material.",
+              "accepted": [
+                "drainage mat"
+              ],
+              "explanation": "The passage explicitly states: drainage mat.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 2,
+              "max_numbers": 0,
+              "diagram": "Roof cross-section from top to bottom: plants → growing material → layer X → waterproof membrane. Label layer X."
+            },
+            {
+              "id": "q23",
+              "type": "short_answer",
+              "prompt": "On the hottest afternoon, the planted shed was _____ degrees cooler.",
+              "accepted": [
+                "four"
+              ],
+              "explanation": "The passage explicitly states: four.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 3,
+              "max_numbers": 1
+            },
+            {
+              "id": "q24",
+              "type": "matching_headings",
+              "prompt": "Choose a heading for paragraph E.",
+              "accepted": [
+                "Limits and future research"
+              ],
+              "explanation": "The passage explicitly states: Limits and future research.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "options": [
+                "Limits and future research",
+                "A study of park birds",
+                "New chemical treatments"
+              ]
+            },
+            {
+              "id": "q25",
+              "type": "yes_no_not_given",
+              "prompt": "Ross recommends the same design throughout the country.",
+              "accepted": [
+                "No"
+              ],
+              "explanation": "She recommends local trials instead of a single national design.",
+              "reference": "Use the corresponding paragraph or named location."
+            },
+            {
+              "id": "q26",
+              "type": "yes_no_not_given",
+              "prompt": "Ross believes schoolchildren should help with the next roof.",
+              "accepted": [
+                "Not Given"
+              ],
+              "explanation": "Schoolchildren are not mentioned.",
+              "reference": "Use the corresponding paragraph or named location."
+            },
+            {
+              "id": "q27",
+              "type": "short_answer",
+              "prompt": "Which source paid for sensors and materials?",
+              "accepted": [
+                "a grant"
+              ],
+              "explanation": "The passage explicitly states: a grant.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 3,
+              "max_numbers": 1
+            }
+          ]
+        },
+        {
+          "id": "part3",
+          "title": "Two wheels, different journeys",
+          "passage": "A. A trial in the town of Alder Bay examined how people use shared bicycles. Transport analyst Luis Ahmed invited 120 adults to participate for six weeks. Half received access to ordinary bicycles, while the rest received electric bicycles. Participants logged their journeys in a diary. The study took place in spring, before the busiest tourist season.\n\nB. Ordinary bicycles were used mainly for short journeys to shops. Electric bicycles were more often used for commuting up the steep road to the hospital. Average trip length was three kilometres for ordinary bicycles and seven for electric bicycles. Riders in both groups said secure parking was more useful than a mobile application with extra features.\n\nC. There were three collection points: the station, the market and the hospital. The station offered 20 spaces and a repair stand. The market had 12 spaces but no repair equipment. The hospital had 16 spaces and a shelter. In the town map, the station is west of the river, the market east of the river, and the hospital north of the market. A footbridge connects the station and market.\n\nD. Ahmed found that some participants replaced car journeys, but others replaced walking trips. Therefore the change in total emissions was uncertain. He said future studies should measure earlier travel habits before bicycles are supplied. Participant Nora Field enjoyed using an electric bicycle but worried about battery replacement costs. Participant Sam Ellis preferred an ordinary bicycle because it was easier to carry upstairs.\n\nE. The town council agreed to continue the project for another year. The next stage will include winter travel and interviews with people who chose not to participate. Ahmed cautioned that the small volunteer sample might not represent every resident. Results from the trial were published on the council website in July.",
+          "instructions": "Read carefully. Follow each question’s answer limit. Choices must match the wording shown.",
+          "questions": [
+            {
+              "id": "q28",
+              "type": "short_answer",
+              "prompt": "How many adults joined the trial?",
+              "accepted": [
+                "120"
+              ],
+              "explanation": "The passage explicitly states: 120.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 3,
+              "max_numbers": 1
+            },
+            {
+              "id": "q29",
+              "type": "short_answer",
+              "prompt": "How long did the trial last?",
+              "accepted": [
+                "six weeks"
+              ],
+              "explanation": "The passage explicitly states: six weeks.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 3,
+              "max_numbers": 1
+            },
+            {
+              "id": "q30",
+              "type": "multiple_choice",
+              "prompt": "Which TWO journey types are specifically described?",
+              "accepted": [
+                "shopping",
+                "commuting"
+              ],
+              "explanation": "The passage explicitly states: ['shopping', 'commuting'].",
+              "reference": "Use the corresponding paragraph or named location.",
+              "options": [
+                "shopping",
+                "commuting",
+                "international tourism",
+                "racing"
+              ],
+              "select_count": 2
+            },
+            {
+              "id": "q31",
+              "type": "single_choice",
+              "prompt": "What did riders in both groups value more?",
+              "accepted": [
+                "Secure parking"
+              ],
+              "explanation": "The passage explicitly states: Secure parking.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "options": [
+                "Secure parking",
+                "Extra app features",
+                "Longer diaries"
+              ]
+            },
+            {
+              "id": "q32",
+              "type": "table_completion",
+              "prompt": "Collection point: market. Number of spaces: _____.",
+              "accepted": [
+                "12"
+              ],
+              "explanation": "The passage explicitly states: 12.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 0,
+              "max_numbers": 1
+            },
+            {
+              "id": "q33",
+              "type": "map_label",
+              "prompt": "Which location lies north of the market?",
+              "accepted": [
+                "hospital"
+              ],
+              "explanation": "The passage explicitly states: hospital.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 2,
+              "max_numbers": 0,
+              "diagram": "Town map: river runs north–south. Station is west; market is east; location X is north of market. Identify X."
+            },
+            {
+              "id": "q34",
+              "type": "true_false_not_given",
+              "prompt": "Every bicycle journey replaced a car journey.",
+              "accepted": [
+                "False"
+              ],
+              "explanation": "Some journeys replaced walking trips.",
+              "reference": "Use the corresponding paragraph or named location."
+            },
+            {
+              "id": "q35",
+              "type": "true_false_not_given",
+              "prompt": "Participants were paid to join.",
+              "accepted": [
+                "Not Given"
+              ],
+              "explanation": "Payment to participants is not discussed.",
+              "reference": "Use the corresponding paragraph or named location."
+            },
+            {
+              "id": "q36",
+              "type": "matching_features",
+              "prompt": "Who was concerned about battery costs?",
+              "accepted": [
+                "Nora Field"
+              ],
+              "explanation": "The passage explicitly states: Nora Field.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "options": [
+                "Luis Ahmed",
+                "Nora Field",
+                "Sam Ellis"
+              ]
+            },
+            {
+              "id": "q37",
+              "type": "matching_information",
+              "prompt": "Which paragraph gives plans for the next stage?",
+              "accepted": [
+                "E"
+              ],
+              "explanation": "The passage explicitly states: E.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+              ]
+            },
+            {
+              "id": "q38",
+              "type": "sentence_completion",
+              "prompt": "Sam preferred an ordinary bicycle because it was easier to carry _____.",
+              "accepted": [
+                "upstairs"
+              ],
+              "explanation": "The passage explicitly states: upstairs.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 3,
+              "max_numbers": 1
+            },
+            {
+              "id": "q39",
+              "type": "note_completion",
+              "prompt": "The next stage will include travel during _____.",
+              "accepted": [
+                "winter"
+              ],
+              "explanation": "The passage explicitly states: winter.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 3,
+              "max_numbers": 1
+            },
+            {
+              "id": "q40",
+              "type": "yes_no_not_given",
+              "prompt": "Ahmed thinks the volunteer sample represents every resident.",
+              "accepted": [
+                "No"
+              ],
+              "explanation": "He cautioned that it might not represent every resident.",
+              "reference": "Use the corresponding paragraph or named location."
+            }
+          ]
+        }
+      ],
+      "answer_keys_reviewed": true,
+      "scoring": {
+        "reviewed": false
+      }
+    },
+    "collection": "academic"
+  },
+  {
+    "slug": "academic-listening-01",
+    "title": "Listen to the world around you",
+    "description": "Original demonstration material. Practise carefully, then explore the evidence behind every answer. This content is not a professionally validated IELTS test.",
+    "skill": "listening",
+    "test_type": "academic",
+    "duration_seconds": 1800,
+    "draft": {
+      "sections": [
+        {
+          "id": "part1",
+          "title": "A community garden registration",
+          "passage": "",
+          "instructions": "Read carefully. Follow each question’s answer limit. Choices must match the wording shown.",
+          "questions": [
+            {
+              "id": "q1",
+              "type": "form_completion",
+              "prompt": "What street is the garden on?",
+              "accepted": [
+                "Willow Street"
+              ],
+              "explanation": "The passage explicitly states: Willow Street.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 3,
+              "max_numbers": 1
+            },
+            {
+              "id": "q2",
+              "type": "form_completion",
+              "prompt": "What building is next to the garden?",
+              "accepted": [
+                "post office"
+              ],
+              "explanation": "The passage explicitly states: post office.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 3,
+              "max_numbers": 1
+            },
+            {
+              "id": "q3",
+              "type": "form_completion",
+              "prompt": "What is the seasonal fee in pounds?",
+              "accepted": [
+                "eighteen"
+              ],
+              "explanation": "The passage explicitly states: eighteen.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 3,
+              "max_numbers": 1
+            },
+            {
+              "id": "q4",
+              "type": "form_completion",
+              "prompt": "On which day is the introduction?",
+              "accepted": [
+                "Saturday"
+              ],
+              "explanation": "The passage explicitly states: Saturday.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 3,
+              "max_numbers": 1
+            },
+            {
+              "id": "q5",
+              "type": "form_completion",
+              "prompt": "What should new members bring?",
+              "accepted": [
+                "gloves"
+              ],
+              "explanation": "The passage explicitly states: gloves.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 3,
+              "max_numbers": 1
+            },
+            {
+              "id": "q6",
+              "type": "form_completion",
+              "prompt": "Which plants are not permitted?",
+              "accepted": [
+                "fruit trees"
+              ],
+              "explanation": "The passage explicitly states: fruit trees.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 3,
+              "max_numbers": 1
+            },
+            {
+              "id": "q7",
+              "type": "form_completion",
+              "prompt": "How many square metres is each plot?",
+              "accepted": [
+                "six"
+              ],
+              "explanation": "The passage explicitly states: six.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 3,
+              "max_numbers": 1
+            },
+            {
+              "id": "q8",
+              "type": "form_completion",
+              "prompt": "What is beside the shed?",
+              "accepted": [
+                "water tap"
+              ],
+              "explanation": "The passage explicitly states: water tap.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 3,
+              "max_numbers": 1
+            },
+            {
+              "id": "q9",
+              "type": "form_completion",
+              "prompt": "What is the coordinator’s name?",
+              "accepted": [
+                "Martin"
+              ],
+              "explanation": "The passage explicitly states: Martin.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 3,
+              "max_numbers": 1
+            },
+            {
+              "id": "q10",
+              "type": "form_completion",
+              "prompt": "In which month is the harvest picnic?",
+              "accepted": [
+                "September"
+              ],
+              "explanation": "The passage explicitly states: September.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 3,
+              "max_numbers": 1
+            }
+          ],
+          "transcript": "Demonstration audio. Part 1. Welcome to the Riverside Garden registration desk. My name is Anna. Our garden is on Willow Street, next to the old post office. New members pay eighteen pounds for the season. The next introduction session is on Saturday at ten in the morning. Please bring gloves; we provide the tools. You can grow vegetables and flowers, but fruit trees are not permitted because their roots require too much space. Each plot measures six square metres. There is a water tap beside the wooden shed. Members must lock the main gate when they leave. To report a problem, email our coordinator, whose name is Martin. We hold our annual harvest picnic in September. The garden closes at sunset each evening.",
+          "audio_file": "listening-1.wav"
+        },
+        {
+          "id": "part2",
+          "title": "Visiting the coastal museum",
+          "passage": "",
+          "instructions": "Read carefully. Follow each question’s answer limit. Choices must match the wording shown.",
+          "questions": [
+            {
+              "id": "q11",
+              "type": "note_completion",
+              "prompt": "What was the building originally?",
+              "accepted": [
+                "warehouse"
+              ],
+              "explanation": "The passage explicitly states: warehouse.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 3,
+              "max_numbers": 1
+            },
+            {
+              "id": "q12",
+              "type": "note_completion",
+              "prompt": "In which year was it built?",
+              "accepted": [
+                "1890"
+              ],
+              "explanation": "The passage explicitly states: 1890.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 3,
+              "max_numbers": 1
+            },
+            {
+              "id": "q13",
+              "type": "note_completion",
+              "prompt": "In which gallery is the restored boat?",
+              "accepted": [
+                "east"
+              ],
+              "explanation": "The passage explicitly states: east.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 3,
+              "max_numbers": 1
+            },
+            {
+              "id": "q14",
+              "type": "note_completion",
+              "prompt": "What is displayed in the west gallery?",
+              "accepted": [
+                "photographs"
+              ],
+              "explanation": "The passage explicitly states: photographs.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 3,
+              "max_numbers": 1
+            },
+            {
+              "id": "q15",
+              "type": "note_completion",
+              "prompt": "What is the temporary exhibition about?",
+              "accepted": [
+                "navigation"
+              ],
+              "explanation": "The passage explicitly states: navigation.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 3,
+              "max_numbers": 1
+            },
+            {
+              "id": "q16",
+              "type": "note_completion",
+              "prompt": "How many audio-guide languages are available?",
+              "accepted": [
+                "four"
+              ],
+              "explanation": "The passage explicitly states: four.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 3,
+              "max_numbers": 1
+            },
+            {
+              "id": "q17",
+              "type": "note_completion",
+              "prompt": "How much does an audio guide cost, in pounds?",
+              "accepted": [
+                "three"
+              ],
+              "explanation": "The passage explicitly states: three.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 3,
+              "max_numbers": 1
+            },
+            {
+              "id": "q18",
+              "type": "note_completion",
+              "prompt": "At what hour does the café close?",
+              "accepted": [
+                "four"
+              ],
+              "explanation": "The passage explicitly states: four.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 3,
+              "max_numbers": 1
+            },
+            {
+              "id": "q19",
+              "type": "note_completion",
+              "prompt": "Where do children meet the workshop leader?",
+              "accepted": [
+                "reception"
+              ],
+              "explanation": "The passage explicitly states: reception.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 3,
+              "max_numbers": 1
+            },
+            {
+              "id": "q20",
+              "type": "note_completion",
+              "prompt": "What landmark is the emergency meeting point?",
+              "accepted": [
+                "stone fountain"
+              ],
+              "explanation": "The passage explicitly states: stone fountain.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 3,
+              "max_numbers": 1
+            }
+          ],
+          "transcript": "Demonstration audio. Part 2. Good morning, everyone. Welcome to the Coast and Community Museum. The building began life as a warehouse in 1890. Today our main exhibition is on the ground floor. It describes local fishing and boat building. Start in the east gallery, where you will find a restored wooden boat. Next, the west gallery contains photographs taken by island residents. Upstairs, there is a temporary exhibition about navigation. You may take photographs without flash, except in the temporary exhibition. Audio guides are available in four languages and cost three pounds. The café closes at four, one hour before the museum. Our gift shop sells books and locally made pottery. Children can join a map-making activity at two in the afternoon. Meet the workshop leader at reception. If the fire alarm sounds, leave through the north exit and meet beside the stone fountain.",
+          "audio_file": "listening-2.wav"
+        },
+        {
+          "id": "part3",
+          "title": "Planning a student research project",
+          "passage": "",
+          "instructions": "Read carefully. Follow each question’s answer limit. Choices must match the wording shown.",
+          "questions": [
+            {
+              "id": "q21",
+              "type": "form_completion",
+              "prompt": "What will participants complete each day?",
+              "accepted": [
+                "diaries"
+              ],
+              "explanation": "The passage explicitly states: diaries.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 3,
+              "max_numbers": 1
+            },
+            {
+              "id": "q22",
+              "type": "form_completion",
+              "prompt": "How many volunteers will join?",
+              "accepted": [
+                "thirty"
+              ],
+              "explanation": "The passage explicitly states: thirty.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 3,
+              "max_numbers": 1
+            },
+            {
+              "id": "q23",
+              "type": "form_completion",
+              "prompt": "How many halls are involved?",
+              "accepted": [
+                "three"
+              ],
+              "explanation": "The passage explicitly states: three.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 3,
+              "max_numbers": 1
+            },
+            {
+              "id": "q24",
+              "type": "form_completion",
+              "prompt": "For how many days will food be recorded?",
+              "accepted": [
+                "fourteen"
+              ],
+              "explanation": "The passage explicitly states: fourteen.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 3,
+              "max_numbers": 1
+            },
+            {
+              "id": "q25",
+              "type": "form_completion",
+              "prompt": "What equipment will be supplied?",
+              "accepted": [
+                "digital scales"
+              ],
+              "explanation": "The passage explicitly states: digital scales.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 3,
+              "max_numbers": 1
+            },
+            {
+              "id": "q26",
+              "type": "form_completion",
+              "prompt": "What will be excluded?",
+              "accepted": [
+                "liquids"
+              ],
+              "explanation": "The passage explicitly states: liquids.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 3,
+              "max_numbers": 1
+            },
+            {
+              "id": "q27",
+              "type": "form_completion",
+              "prompt": "What will replace participants’ names?",
+              "accepted": [
+                "identification numbers"
+              ],
+              "explanation": "The passage explicitly states: identification numbers.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 3,
+              "max_numbers": 1
+            },
+            {
+              "id": "q28",
+              "type": "form_completion",
+              "prompt": "Where will files be stored?",
+              "accepted": [
+                "university server"
+              ],
+              "explanation": "The passage explicitly states: university server.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 3,
+              "max_numbers": 1
+            },
+            {
+              "id": "q29",
+              "type": "form_completion",
+              "prompt": "On which day does the pilot start?",
+              "accepted": [
+                "Monday"
+              ],
+              "explanation": "The passage explicitly states: Monday.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 3,
+              "max_numbers": 1
+            },
+            {
+              "id": "q30",
+              "type": "form_completion",
+              "prompt": "In which month is the final report due?",
+              "accepted": [
+                "November"
+              ],
+              "explanation": "The passage explicitly states: November.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 3,
+              "max_numbers": 1
+            }
+          ],
+          "transcript": "Demonstration audio. Part 3. Tutor: Tell me about your project, Mia. Student: We want to study food waste in student kitchens. We considered a questionnaire, but decided to use daily diaries instead. Tutor: How many participants? Student: Thirty volunteers from three halls of residence. Each will record discarded food for fourteen days. We will supply digital scales so they can measure its weight. Tutor: What categories will you use? Student: Fruit and vegetables, cooked meals, and bread. We will exclude liquids because measuring them consistently would be difficult. Tutor: What about privacy? Student: Diaries will use identification numbers, not names. We will store the files on the university server. Tutor: When is the pilot? Student: Next Monday, with four students. The final report is due in November. Tutor: Remember to discuss limitations. Volunteers might change their habits because they know they are being observed. Student: We will mention that in the conclusion.",
+          "audio_file": "listening-3.wav"
+        },
+        {
+          "id": "part4",
+          "title": "Restoring an urban stream",
+          "passage": "",
+          "instructions": "Read carefully. Follow each question’s answer limit. Choices must match the wording shown.",
+          "questions": [
+            {
+              "id": "q31",
+              "type": "note_completion",
+              "prompt": "What material lined the old channel?",
+              "accepted": [
+                "concrete"
+              ],
+              "explanation": "The passage explicitly states: concrete.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 3,
+              "max_numbers": 1
+            },
+            {
+              "id": "q32",
+              "type": "note_completion",
+              "prompt": "In which year did removal begin?",
+              "accepted": [
+                "2015"
+              ],
+              "explanation": "The passage explicitly states: 2015.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 3,
+              "max_numbers": 1
+            },
+            {
+              "id": "q33",
+              "type": "note_completion",
+              "prompt": "What plants were put on the banks?",
+              "accepted": [
+                "native grasses"
+              ],
+              "explanation": "The passage explicitly states: native grasses.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 3,
+              "max_numbers": 1
+            },
+            {
+              "id": "q34",
+              "type": "note_completion",
+              "prompt": "Where does water spread during heavy rain?",
+              "accepted": [
+                "a meadow"
+              ],
+              "explanation": "The passage explicitly states: a meadow.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 3,
+              "max_numbers": 1
+            },
+            {
+              "id": "q35",
+              "type": "note_completion",
+              "prompt": "Who monitored the project?",
+              "accepted": [
+                "Sarah Dean"
+              ],
+              "explanation": "The passage explicitly states: Sarah Dean.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 3,
+              "max_numbers": 1
+            },
+            {
+              "id": "q36",
+              "type": "note_completion",
+              "prompt": "How often was temperature measured?",
+              "accepted": [
+                "every hour"
+              ],
+              "explanation": "The passage explicitly states: every hour.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 3,
+              "max_numbers": 1
+            },
+            {
+              "id": "q37",
+              "type": "note_completion",
+              "prompt": "In which season were insects counted?",
+              "accepted": [
+                "spring"
+              ],
+              "explanation": "The passage explicitly states: spring.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 3,
+              "max_numbers": 1
+            },
+            {
+              "id": "q38",
+              "type": "note_completion",
+              "prompt": "By how many degrees did peak temperature fall?",
+              "accepted": [
+                "two"
+              ],
+              "explanation": "The passage explicitly states: two.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 3,
+              "max_numbers": 1
+            },
+            {
+              "id": "q39",
+              "type": "note_completion",
+              "prompt": "How many insect species were found in year five?",
+              "accepted": [
+                "seventeen"
+              ],
+              "explanation": "The passage explicitly states: seventeen.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 3,
+              "max_numbers": 1
+            },
+            {
+              "id": "q40",
+              "type": "note_completion",
+              "prompt": "What did Dean recommend filtering?",
+              "accepted": [
+                "runoff"
+              ],
+              "explanation": "The passage explicitly states: runoff.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 3,
+              "max_numbers": 1
+            }
+          ],
+          "transcript": "Demonstration audio. Part 4. Today we will examine the restoration of Brook Lane Stream. For decades it flowed through a concrete channel built to reduce flooding near factories. In 2015, the council began removing sections of concrete. Engineers widened the channel and created shallow banks. These banks were planted with native grasses. Instead of carrying water away as quickly as possible, the new design lets it spread into a meadow during heavy rain. The meadow normally serves as public open space. Biologist Sarah Dean monitored the project for five years. She measured water temperature every hour and counted aquatic insects each spring. Shade from new trees reduced the highest summer temperature by two degrees. The team found nine species of aquatic insects in the first year and seventeen in the fifth. However, water quality still declined after storms because polluted runoff entered from roads. Dean recommended filtering that runoff before it reaches the stream. The project cost two million pounds. Most funding came from a regional environment fund, with a smaller contribution from the council. Local volunteers now remove litter once a month.",
+          "audio_file": "listening-4.wav"
+        }
+      ],
+      "answer_keys_reviewed": true,
+      "scoring": {
+        "reviewed": false
+      }
+    },
+    "collection": "academic"
+  },
+  {
+    "slug": "academic-writing-01",
+    "title": "Cities that work for everyone",
+    "description": "Original demonstration material. Practise carefully, then explore the evidence behind every answer. This content is not a professionally validated IELTS test.",
+    "skill": "writing",
+    "test_type": "academic",
+    "duration_seconds": 3600,
+    "draft": {
+      "sections": [
+        {
+          "id": "task1",
+          "title": "Task 1 · Describe the data",
+          "passage": "The table gives the percentage of journeys made by bicycle in three fictional towns.\nTown | 2010 | 2020\nBellwick | 8% | 18%\nNorthbridge | 12% | 16%\nAlder Bay | 5% | 22%\nAll figures are original demonstration data.",
+          "instructions": "Read carefully. Follow each question’s answer limit. Choices must match the wording shown.",
+          "questions": [
+            {
+              "id": "task1",
+              "type": "writing",
+              "task": 1,
+              "prompt": "Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+              "min_words": 150
+            }
+          ]
+        },
+        {
+          "id": "task2",
+          "title": "Task 2 · Develop an argument",
+          "passage": "Allow approximately 40 minutes for this task.",
+          "instructions": "Read carefully. Follow each question’s answer limit. Choices must match the wording shown.",
+          "questions": [
+            {
+              "id": "task2",
+              "type": "writing",
+              "task": 2,
+              "prompt": "Some people think cities should spend more on public transport than on roads for private cars. To what extent do you agree or disagree? Give reasons and include relevant examples.",
+              "min_words": 250
+            }
+          ]
+        }
+      ],
+      "answer_keys_reviewed": true,
+      "scoring": {
+        "reviewed": false
+      }
+    },
+    "collection": "academic"
+  },
+  {
+    "slug": "speaking-01",
+    "title": "People, places and possibilities",
+    "description": "Original demonstration material. Practise carefully, then explore the evidence behind every answer. This content is not a professionally validated IELTS test.",
+    "skill": "speaking",
+    "test_type": "academic",
+    "duration_seconds": 840,
+    "draft": {
+      "sections": [
+        {
+          "id": "part1",
+          "title": "Part 1 · Familiar topics",
+          "passage": "Practise speaking naturally. This recording simulation is not a live examiner interview.",
+          "instructions": "Read carefully. Follow each question’s answer limit. Choices must match the wording shown.",
+          "questions": [
+            {
+              "id": "speaking1",
+              "type": "speaking",
+              "prompt": "Tell us about the place where you live. What do you enjoy about it? Is there anything you would like to change?",
+              "preparation_seconds": 0,
+              "response_seconds": 120
+            }
+          ]
+        },
+        {
+          "id": "part2",
+          "title": "Part 2 · Your long turn",
+          "passage": "Prepare for one minute, then speak for up to two minutes.",
+          "instructions": "Read carefully. Follow each question’s answer limit. Choices must match the wording shown.",
+          "questions": [
+            {
+              "id": "speaking2",
+              "type": "speaking",
+              "prompt": "Describe a skill you learned that has been useful. Say what it is, how you learned it, why you learned it, and explain how it has helped you.",
+              "preparation_seconds": 60,
+              "response_seconds": 120
+            }
+          ]
+        },
+        {
+          "id": "part3",
+          "title": "Part 3 · Explore an idea",
+          "passage": "Develop your answers with reasons and examples.",
+          "instructions": "Read carefully. Follow each question’s answer limit. Choices must match the wording shown.",
+          "questions": [
+            {
+              "id": "speaking3",
+              "type": "speaking",
+              "prompt": "How has technology changed the way people learn new skills? Should employers provide time for learning? Why might adults find learning different from children?",
+              "preparation_seconds": 0,
+              "response_seconds": 240
+            }
+          ]
+        }
+      ],
+      "answer_keys_reviewed": true,
+      "scoring": {
+        "reviewed": false
+      }
+    },
+    "collection": "academic"
+  },
+  {
+    "slug": "general-reading-01",
+    "title": "Everyday life, wider possibilities",
+    "description": "Original demonstration material. Practise carefully, then explore the evidence behind every answer. This content is not a professionally validated IELTS test.",
+    "skill": "reading",
+    "test_type": "general",
+    "duration_seconds": 3600,
+    "draft": {
+      "sections": [
+        {
+          "id": "part1",
+          "title": "Everyday services",
+          "passage": "The Hillford Community Centre opens at 8 am on weekdays and 10 am on Saturdays. It is closed on Sundays. Membership costs 25 pounds per year and includes use of the reading room. The swimming pool is in a separate building and requires an additional ticket. Members can book a meeting room online up to fourteen days ahead. Cancellations made at least 48 hours in advance receive a full refund. The kitchen may be used only by staff. Bicycle parking is behind the main hall. Lost property is held at reception for thirty days. A weekly repair café takes place on Thursday evenings. Volunteers repair small household items but do not service gas appliances. Visitors should bring any replacement parts themselves. The nearest bus stop is outside the pharmacy. For urgent enquiries, call the reception desk rather than sending an email.",
+          "instructions": "Read carefully. Follow each question’s answer limit. Choices must match the wording shown.",
+          "questions": [
+            {
+              "id": "q1",
+              "type": "note_completion",
+              "prompt": "When does the centre open on Saturdays?",
+              "accepted": [
+                "10 am"
+              ],
+              "explanation": "The passage explicitly states: 10 am.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 3,
+              "max_numbers": 1
+            },
+            {
+              "id": "q2",
+              "type": "form_completion",
+              "prompt": "On which day is it closed?",
+              "accepted": [
+                "Sundays"
+              ],
+              "explanation": "The passage explicitly states: Sundays.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 3,
+              "max_numbers": 1
+            },
+            {
+              "id": "q3",
+              "type": "sentence_completion",
+              "prompt": "How much is annual membership, in pounds?",
+              "accepted": [
+                "25"
+              ],
+              "explanation": "The passage explicitly states: 25.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 3,
+              "max_numbers": 1
+            },
+            {
+              "id": "q4",
+              "type": "short_answer",
+              "prompt": "Which room is included in membership?",
+              "accepted": [
+                "reading room"
+              ],
+              "explanation": "The passage explicitly states: reading room.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 3,
+              "max_numbers": 1
+            },
+            {
+              "id": "q5",
+              "type": "note_completion",
+              "prompt": "Which facility requires an extra ticket?",
+              "accepted": [
+                "swimming pool"
+              ],
+              "explanation": "The passage explicitly states: swimming pool.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 3,
+              "max_numbers": 1
+            },
+            {
+              "id": "q6",
+              "type": "form_completion",
+              "prompt": "How many days ahead can rooms be booked?",
+              "accepted": [
+                "fourteen"
+              ],
+              "explanation": "The passage explicitly states: fourteen.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 3,
+              "max_numbers": 1
+            },
+            {
+              "id": "q7",
+              "type": "sentence_completion",
+              "prompt": "How many hours before a booking must a cancellation be made for a full refund?",
+              "accepted": [
+                "48"
+              ],
+              "explanation": "The passage explicitly states: 48.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 3,
+              "max_numbers": 1
+            },
+            {
+              "id": "q8",
+              "type": "short_answer",
+              "prompt": "Who may use the kitchen?",
+              "accepted": [
+                "staff"
+              ],
+              "explanation": "The passage explicitly states: staff.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 3,
+              "max_numbers": 1
+            },
+            {
+              "id": "q9",
+              "type": "note_completion",
+              "prompt": "What is behind the main hall?",
+              "accepted": [
+                "bicycle parking"
+              ],
+              "explanation": "The passage explicitly states: bicycle parking.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 3,
+              "max_numbers": 1
+            },
+            {
+              "id": "q10",
+              "type": "form_completion",
+              "prompt": "Where is lost property held?",
+              "accepted": [
+                "reception"
+              ],
+              "explanation": "The passage explicitly states: reception.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 3,
+              "max_numbers": 1
+            },
+            {
+              "id": "q11",
+              "type": "sentence_completion",
+              "prompt": "For how many days is lost property kept?",
+              "accepted": [
+                "thirty"
+              ],
+              "explanation": "The passage explicitly states: thirty.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 3,
+              "max_numbers": 1
+            },
+            {
+              "id": "q12",
+              "type": "short_answer",
+              "prompt": "On which evening does the repair café run?",
+              "accepted": [
+                "Thursday"
+              ],
+              "explanation": "The passage explicitly states: Thursday.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 3,
+              "max_numbers": 1
+            },
+            {
+              "id": "q13",
+              "type": "note_completion",
+              "prompt": "Which appliances are excluded from repairs?",
+              "accepted": [
+                "gas appliances"
+              ],
+              "explanation": "The passage explicitly states: gas appliances.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 3,
+              "max_numbers": 1
+            },
+            {
+              "id": "q14",
+              "type": "form_completion",
+              "prompt": "Who should provide replacement parts?",
+              "accepted": [
+                "visitors"
+              ],
+              "explanation": "The passage explicitly states: visitors.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 3,
+              "max_numbers": 1
+            }
+          ]
+        },
+        {
+          "id": "part2",
+          "title": "At work",
+          "passage": "Welcome to Fairway Office Supplies. New employees attend induction on their first Tuesday. Bring photo identification and bank details. The induction starts in room Cedar at 9 am. Your supervisor will provide a security badge, which must be worn whenever you are in the warehouse. Visitors sign in at the front desk and must be accompanied by an employee. Personal deliveries are not accepted. Lunch breaks last forty minutes. The staff kitchen is on the second floor. Annual leave requests should be submitted through the staff portal at least three weeks in advance. If you are ill, telephone your supervisor before 8 am; a text message is not sufficient. Training in manual handling is mandatory before moving heavy boxes. Report damaged equipment to the facilities team. Fire drills take place every three months. At the alarm, leave by the nearest safe exit and gather beside the oak tree in the east car park. Do not return for personal belongings. Remote workers attend a team meeting every Wednesday.",
+          "instructions": "Read carefully. Follow each question’s answer limit. Choices must match the wording shown.",
+          "questions": [
+            {
+              "id": "q15",
+              "type": "sentence_completion",
+              "prompt": "On which day do new staff attend induction?",
+              "accepted": [
+                "Tuesday"
+              ],
+              "explanation": "The passage explicitly states: Tuesday.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 3,
+              "max_numbers": 1
+            },
+            {
+              "id": "q16",
+              "type": "short_answer",
+              "prompt": "What kind of identification is required?",
+              "accepted": [
+                "photo identification"
+              ],
+              "explanation": "The passage explicitly states: photo identification.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 3,
+              "max_numbers": 1
+            },
+            {
+              "id": "q17",
+              "type": "note_completion",
+              "prompt": "In which room does induction begin?",
+              "accepted": [
+                "Cedar"
+              ],
+              "explanation": "The passage explicitly states: Cedar.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 3,
+              "max_numbers": 1
+            },
+            {
+              "id": "q18",
+              "type": "form_completion",
+              "prompt": "Who provides security badges?",
+              "accepted": [
+                "supervisor"
+              ],
+              "explanation": "The passage explicitly states: supervisor.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 3,
+              "max_numbers": 1
+            },
+            {
+              "id": "q19",
+              "type": "sentence_completion",
+              "prompt": "Where do visitors sign in?",
+              "accepted": [
+                "front desk"
+              ],
+              "explanation": "The passage explicitly states: front desk.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 3,
+              "max_numbers": 1
+            },
+            {
+              "id": "q20",
+              "type": "short_answer",
+              "prompt": "How long is a lunch break in minutes?",
+              "accepted": [
+                "forty"
+              ],
+              "explanation": "The passage explicitly states: forty.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 3,
+              "max_numbers": 1
+            },
+            {
+              "id": "q21",
+              "type": "note_completion",
+              "prompt": "On which floor is the kitchen?",
+              "accepted": [
+                "second"
+              ],
+              "explanation": "The passage explicitly states: second.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 3,
+              "max_numbers": 1
+            },
+            {
+              "id": "q22",
+              "type": "form_completion",
+              "prompt": "Where should leave requests be submitted?",
+              "accepted": [
+                "staff portal"
+              ],
+              "explanation": "The passage explicitly states: staff portal.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 3,
+              "max_numbers": 1
+            },
+            {
+              "id": "q23",
+              "type": "sentence_completion",
+              "prompt": "How many weeks ahead should leave be requested?",
+              "accepted": [
+                "three"
+              ],
+              "explanation": "The passage explicitly states: three.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 3,
+              "max_numbers": 1
+            },
+            {
+              "id": "q24",
+              "type": "short_answer",
+              "prompt": "Who should be telephoned when you are ill?",
+              "accepted": [
+                "supervisor"
+              ],
+              "explanation": "The passage explicitly states: supervisor.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 3,
+              "max_numbers": 1
+            },
+            {
+              "id": "q25",
+              "type": "note_completion",
+              "prompt": "Which training is required for moving heavy boxes?",
+              "accepted": [
+                "manual handling"
+              ],
+              "explanation": "The passage explicitly states: manual handling.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 3,
+              "max_numbers": 1
+            },
+            {
+              "id": "q26",
+              "type": "form_completion",
+              "prompt": "Which team handles damaged equipment?",
+              "accepted": [
+                "facilities team"
+              ],
+              "explanation": "The passage explicitly states: facilities team.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 3,
+              "max_numbers": 1
+            },
+            {
+              "id": "q27",
+              "type": "sentence_completion",
+              "prompt": "Beside which tree do staff gather during a fire drill?",
+              "accepted": [
+                "oak tree"
+              ],
+              "explanation": "The passage explicitly states: oak tree.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 3,
+              "max_numbers": 1
+            }
+          ]
+        },
+        {
+          "id": "part3",
+          "title": "Learning a craft",
+          "passage": "When Lena Brooks moved to Westmere, she knew nobody in the town. She enrolled in an evening pottery course at the local college, hoping to meet people. The course lasted ten weeks and was taught by artist Peter Shaw. The first lesson focused on preparing clay, not using a wheel. Students kneaded it carefully to remove air bubbles, which can cause cracks during firing. Shaw encouraged beginners to make simple bowls before attempting narrow vases. Each student received two kilograms of clay per session. Tools were supplied, but students brought their own aprons. The workshop had six wheels shared by twelve students. Working in pairs gave learners time to watch each other and exchange suggestions. Lena found centring the clay particularly difficult. After practising, she discovered that steady pressure mattered more than speed. Finished pieces were left to dry for seven days before their first firing. Students then applied glaze with brushes. The kiln reached 1200 degrees during the final firing. Electricity costs were included in the course fee. At the final exhibition, visitors could buy students’ work; proceeds went to a local food bank. Lena sold three bowls. She later joined a cooperative studio, where members share both equipment and cleaning duties. She says the friendships have mattered as much as the objects she learned to make.",
+          "instructions": "Read carefully. Follow each question’s answer limit. Choices must match the wording shown.",
+          "questions": [
+            {
+              "id": "q28",
+              "type": "short_answer",
+              "prompt": "What kind of course did Lena join?",
+              "accepted": [
+                "pottery"
+              ],
+              "explanation": "The passage explicitly states: pottery.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 3,
+              "max_numbers": 1
+            },
+            {
+              "id": "q29",
+              "type": "note_completion",
+              "prompt": "How many weeks did the course last?",
+              "accepted": [
+                "ten"
+              ],
+              "explanation": "The passage explicitly states: ten.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 3,
+              "max_numbers": 1
+            },
+            {
+              "id": "q30",
+              "type": "form_completion",
+              "prompt": "Who taught the course?",
+              "accepted": [
+                "Peter Shaw"
+              ],
+              "explanation": "The passage explicitly states: Peter Shaw.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 3,
+              "max_numbers": 1
+            },
+            {
+              "id": "q31",
+              "type": "sentence_completion",
+              "prompt": "What must be removed from clay?",
+              "accepted": [
+                "air bubbles"
+              ],
+              "explanation": "The passage explicitly states: air bubbles.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 3,
+              "max_numbers": 1
+            },
+            {
+              "id": "q32",
+              "type": "short_answer",
+              "prompt": "What should beginners make first?",
+              "accepted": [
+                "simple bowls"
+              ],
+              "explanation": "The passage explicitly states: simple bowls.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 3,
+              "max_numbers": 1
+            },
+            {
+              "id": "q33",
+              "type": "note_completion",
+              "prompt": "How many kilograms of clay did each student receive?",
+              "accepted": [
+                "two"
+              ],
+              "explanation": "The passage explicitly states: two.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 3,
+              "max_numbers": 1
+            },
+            {
+              "id": "q34",
+              "type": "form_completion",
+              "prompt": "What did students bring themselves?",
+              "accepted": [
+                "aprons"
+              ],
+              "explanation": "The passage explicitly states: aprons.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 3,
+              "max_numbers": 1
+            },
+            {
+              "id": "q35",
+              "type": "sentence_completion",
+              "prompt": "How many wheels were available?",
+              "accepted": [
+                "six"
+              ],
+              "explanation": "The passage explicitly states: six.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 3,
+              "max_numbers": 1
+            },
+            {
+              "id": "q36",
+              "type": "short_answer",
+              "prompt": "What aspect did Lena find difficult?",
+              "accepted": [
+                "centring the clay"
+              ],
+              "explanation": "The passage explicitly states: centring the clay.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 3,
+              "max_numbers": 1
+            },
+            {
+              "id": "q37",
+              "type": "note_completion",
+              "prompt": "What mattered more than speed?",
+              "accepted": [
+                "steady pressure"
+              ],
+              "explanation": "The passage explicitly states: steady pressure.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 3,
+              "max_numbers": 1
+            },
+            {
+              "id": "q38",
+              "type": "form_completion",
+              "prompt": "How many days did pieces dry?",
+              "accepted": [
+                "seven"
+              ],
+              "explanation": "The passage explicitly states: seven.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 3,
+              "max_numbers": 1
+            },
+            {
+              "id": "q39",
+              "type": "sentence_completion",
+              "prompt": "What tools applied the glaze?",
+              "accepted": [
+                "brushes"
+              ],
+              "explanation": "The passage explicitly states: brushes.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 3,
+              "max_numbers": 1
+            },
+            {
+              "id": "q40",
+              "type": "short_answer",
+              "prompt": "Which organisation received sale proceeds?",
+              "accepted": [
+                "food bank"
+              ],
+              "explanation": "The passage explicitly states: food bank.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 3,
+              "max_numbers": 1
+            }
+          ]
+        }
+      ],
+      "answer_keys_reviewed": true,
+      "scoring": {
+        "reviewed": false
+      }
+    },
+    "collection": "general"
+  },
+  {
+    "slug": "general-writing-01",
+    "title": "A letter and a point of view",
+    "description": "Original demonstration material. Practise carefully, then explore the evidence behind every answer. This content is not a professionally validated IELTS test.",
+    "skill": "writing",
+    "test_type": "general",
+    "duration_seconds": 3600,
+    "draft": {
+      "sections": [
+        {
+          "id": "task1",
+          "title": "Task 1 · Write a letter",
+          "passage": "You recently attended an evening class at a community centre.",
+          "instructions": "Read carefully. Follow each question’s answer limit. Choices must match the wording shown.",
+          "questions": [
+            {
+              "id": "task1",
+              "type": "writing",
+              "task": 1,
+              "prompt": "Write a letter to the centre manager. Describe what you enjoyed, explain a problem with the facilities, and suggest an improvement. Begin: Dear Sir or Madam,",
+              "min_words": 150
+            }
+          ]
+        },
+        {
+          "id": "task2",
+          "title": "Task 2 · Discuss a view",
+          "passage": "Give reasons and relevant examples.",
+          "instructions": "Read carefully. Follow each question’s answer limit. Choices must match the wording shown.",
+          "questions": [
+            {
+              "id": "task2",
+              "type": "writing",
+              "task": 2,
+              "prompt": "Some people believe practical skills should receive as much attention as academic subjects at school. Do you agree or disagree?",
+              "min_words": 250
+            }
+          ]
+        }
+      ],
+      "answer_keys_reviewed": true,
+      "scoring": {
+        "reviewed": false
+      }
+    },
+    "collection": "general"
+  },
+  {
+    "slug": "reading-question-lab",
+    "title": "Find your question-type confidence",
+    "description": "Original demonstration material. Practise carefully, then explore the evidence behind every answer. This content is not a professionally validated IELTS test.",
+    "skill": "reading",
+    "test_type": "academic",
+    "duration_seconds": 1200,
+    "draft": {
+      "sections": [
+        {
+          "id": "lab",
+          "title": "A tour of question types",
+          "passage": "A. In 2018, the coastal town of Bellwick opened a library inside a former railway station. The project was called Open Doors. Architect Maya Patel kept the original clock above the entrance, but replaced the ticket windows with reading desks. The council paid for construction; a neighbourhood association supplied second-hand furniture. The building opens at nine in the morning, six days a week, and closes on Mondays.\n\nB. Rather than buying every title immediately, the librarians first asked residents what they wanted to read. Gardening books were requested most often. A survey received 240 replies. A quiet room for independent study was created upstairs, while the ground floor includes a workshop and a children's corner. Large signs and a step-free entrance help visitors find their way. There are no café facilities inside the building.\n\nC. The library lends tools as well as books. Members may borrow a drill for seven days, but must attend a safety demonstration first. Sewing machines can only be used in the workshop. The service is free for residents. Visitors from outside Bellwick pay a small annual membership fee. Staff record each loan electronically, although paper receipts are available on request.\n\nD. An evaluation after the first year found that visits had doubled compared with the old library. However, the report did not measure changes in reading ability. Researcher Daniel Wu warned against assuming that attendance alone proves educational improvement. He recommended interviewing visitors again after three years. The council decided to maintain opening hours rather than extend them.\n\nBuilding plan: entering from the south, the information desk is directly ahead. To the west of the desk is the workshop; to the east is the children's corner. Stairs behind the desk lead to the quiet room upstairs. The north door opens onto a garden.\n\nA. The Green Roof Project began at Northbridge College in 2020. Botanist Elena Ross wanted to discover whether planted roofs could reduce summer heat in small buildings. Her team compared two identical sheds, one with a planted roof and one with a bare metal roof. Both sheds faced south and neither contained air conditioning. Sensors measured the indoor temperature every fifteen minutes.\n\nB. The researchers chose sedum because its thick leaves retain water. Beneath the plants lay eight centimetres of growing material, followed by a drainage mat and a waterproof membrane. Rainwater left the roof through an outlet on its eastern edge. The planted roof needed watering during the first month, but after that it relied on rainfall except during unusually dry weeks.\n\nC. On the hottest afternoon, the shed with the planted roof was four degrees cooler. In winter, the temperature difference was smaller. The team recorded 18 species of insects on the roof, compared with five near the bare shed. These observations suggest a benefit for wildlife, but the researchers did not investigate birds or small mammals. No chemicals were applied to either roof.\n\nD. Engineer Oliver Chen checked the structure before planting. Wet soil adds weight, so he reinforced two support beams. He argued that structural checks should precede any installation. Ross agreed but said maintenance costs also deserved attention. The project used volunteer labour for planting, while a grant covered sensors and materials.\n\nE. The college plans to extend the study to a taller building. The current results cannot automatically be applied to every roof: wind and shade may change performance. Ross recommends local trials instead of a single national design. She has not claimed that green roofs can replace parks.\n\nA. A trial in the town of Alder Bay examined how people use shared bicycles. Transport analyst Luis Ahmed invited 120 adults to participate for six weeks. Half received access to ordinary bicycles, while the rest received electric bicycles. Participants logged their journeys in a diary. The study took place in spring, before the busiest tourist season.\n\nB. Ordinary bicycles were used mainly for short journeys to shops. Electric bicycles were more often used for commuting up the steep road to the hospital. Average trip length was three kilometres for ordinary bicycles and seven for electric bicycles. Riders in both groups said secure parking was more useful than a mobile application with extra features.\n\nC. There were three collection points: the station, the market and the hospital. The station offered 20 spaces and a repair stand. The market had 12 spaces but no repair equipment. The hospital had 16 spaces and a shelter. In the town map, the station is west of the river, the market east of the river, and the hospital north of the market. A footbridge connects the station and market.\n\nD. Ahmed found that some participants replaced car journeys, but others replaced walking trips. Therefore the change in total emissions was uncertain. He said future studies should measure earlier travel habits before bicycles are supplied. Participant Nora Field enjoyed using an electric bicycle but worried about battery replacement costs. Participant Sam Ellis preferred an ordinary bicycle because it was easier to carry upstairs.\n\nE. The town council agreed to continue the project for another year. The next stage will include winter travel and interviews with people who chose not to participate. Ahmed cautioned that the small volunteer sample might not represent every resident. Results from the trial were published on the council website in July.",
+          "instructions": "Read carefully. Follow each question’s answer limit. Choices must match the wording shown.",
+          "questions": [
+            {
+              "id": "q31",
+              "type": "single_choice",
+              "prompt": "What did riders in both groups value more?",
+              "accepted": [
+                "Secure parking"
+              ],
+              "explanation": "The passage explicitly states: Secure parking.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "options": [
+                "Secure parking",
+                "Extra app features",
+                "Longer diaries"
+              ]
+            },
+            {
+              "id": "q29",
+              "type": "short_answer",
+              "prompt": "How long did the trial last?",
+              "accepted": [
+                "six weeks"
+              ],
+              "explanation": "The passage explicitly states: six weeks.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 3,
+              "max_numbers": 1
+            },
+            {
+              "id": "q35",
+              "type": "true_false_not_given",
+              "prompt": "Participants were paid to join.",
+              "accepted": [
+                "Not Given"
+              ],
+              "explanation": "Payment to participants is not discussed.",
+              "reference": "Use the corresponding paragraph or named location."
+            },
+            {
+              "id": "q24",
+              "type": "matching_headings",
+              "prompt": "Choose a heading for paragraph E.",
+              "accepted": [
+                "Limits and future research"
+              ],
+              "explanation": "The passage explicitly states: Limits and future research.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "options": [
+                "Limits and future research",
+                "A study of park birds",
+                "New chemical treatments"
+              ]
+            },
+            {
+              "id": "q7",
+              "type": "form_completion",
+              "prompt": "How many survey replies were received?",
+              "accepted": [
+                "240"
+              ],
+              "explanation": "The passage explicitly states: 240.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 3,
+              "max_numbers": 1
+            },
+            {
+              "id": "q38",
+              "type": "sentence_completion",
+              "prompt": "Sam preferred an ordinary bicycle because it was easier to carry _____.",
+              "accepted": [
+                "upstairs"
+              ],
+              "explanation": "The passage explicitly states: upstairs.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 3,
+              "max_numbers": 1
+            },
+            {
+              "id": "q30",
+              "type": "multiple_choice",
+              "prompt": "Which TWO journey types are specifically described?",
+              "accepted": [
+                "shopping",
+                "commuting"
+              ],
+              "explanation": "The passage explicitly states: ['shopping', 'commuting'].",
+              "reference": "Use the corresponding paragraph or named location.",
+              "options": [
+                "shopping",
+                "commuting",
+                "international tourism",
+                "racing"
+              ],
+              "select_count": 2
+            },
+            {
+              "id": "q32",
+              "type": "table_completion",
+              "prompt": "Collection point: market. Number of spaces: _____.",
+              "accepted": [
+                "12"
+              ],
+              "explanation": "The passage explicitly states: 12.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 0,
+              "max_numbers": 1
+            },
+            {
+              "id": "q39",
+              "type": "note_completion",
+              "prompt": "The next stage will include travel during _____.",
+              "accepted": [
+                "winter"
+              ],
+              "explanation": "The passage explicitly states: winter.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 3,
+              "max_numbers": 1
+            },
+            {
+              "id": "q37",
+              "type": "matching_information",
+              "prompt": "Which paragraph gives plans for the next stage?",
+              "accepted": [
+                "E"
+              ],
+              "explanation": "The passage explicitly states: E.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "options": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+              ]
+            },
+            {
+              "id": "q13",
+              "type": "plan_label",
+              "prompt": "Label the room WEST of the information desk.",
+              "accepted": [
+                "workshop"
+              ],
+              "explanation": "The passage explicitly states: workshop.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 2,
+              "max_numbers": 0,
+              "diagram": "Accessible plan: entrance at south; desk in centre; room X west; children’s corner east; stairs north. Label X."
+            },
+            {
+              "id": "q40",
+              "type": "yes_no_not_given",
+              "prompt": "Ahmed thinks the volunteer sample represents every resident.",
+              "accepted": [
+                "No"
+              ],
+              "explanation": "He cautioned that it might not represent every resident.",
+              "reference": "Use the corresponding paragraph or named location."
+            },
+            {
+              "id": "q17",
+              "type": "summary_completion",
+              "prompt": "Sensors measured temperature every _____ minutes.",
+              "accepted": [
+                "fifteen"
+              ],
+              "explanation": "The passage explicitly states: fifteen.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 3,
+              "max_numbers": 1
+            },
+            {
+              "id": "q36",
+              "type": "matching_features",
+              "prompt": "Who was concerned about battery costs?",
+              "accepted": [
+                "Nora Field"
+              ],
+              "explanation": "The passage explicitly states: Nora Field.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "options": [
+                "Luis Ahmed",
+                "Nora Field",
+                "Sam Ellis"
+              ]
+            },
+            {
+              "id": "q22",
+              "type": "diagram_label",
+              "prompt": "Label the layer directly below the growing material.",
+              "accepted": [
+                "drainage mat"
+              ],
+              "explanation": "The passage explicitly states: drainage mat.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 2,
+              "max_numbers": 0,
+              "diagram": "Roof cross-section from top to bottom: plants → growing material → layer X → waterproof membrane. Label layer X."
+            },
+            {
+              "id": "q33",
+              "type": "map_label",
+              "prompt": "Which location lies north of the market?",
+              "accepted": [
+                "hospital"
+              ],
+              "explanation": "The passage explicitly states: hospital.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 2,
+              "max_numbers": 0,
+              "diagram": "Town map: river runs north–south. Station is west; market is east; location X is north of market. Identify X."
+            }
+          ]
+        }
+      ],
+      "answer_keys_reviewed": true,
+      "scoring": {
+        "reviewed": false
+      }
+    },
+    "tags": [
+      "Question types",
+      "Strategy"
+    ]
+  },
+  {
+    "slug": "listening-garden",
+    "title": "A place to grow",
+    "description": "Original demonstration material. Practise carefully, then explore the evidence behind every answer. This content is not a professionally validated IELTS test.",
+    "skill": "listening",
+    "test_type": "academic",
+    "duration_seconds": 600,
+    "draft": {
+      "sections": [
+        {
+          "id": "part1",
+          "title": "A community garden registration",
+          "passage": "",
+          "instructions": "Read carefully. Follow each question’s answer limit. Choices must match the wording shown.",
+          "questions": [
+            {
+              "id": "q1",
+              "type": "form_completion",
+              "prompt": "What street is the garden on?",
+              "accepted": [
+                "Willow Street"
+              ],
+              "explanation": "The passage explicitly states: Willow Street.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 3,
+              "max_numbers": 1
+            },
+            {
+              "id": "q2",
+              "type": "form_completion",
+              "prompt": "What building is next to the garden?",
+              "accepted": [
+                "post office"
+              ],
+              "explanation": "The passage explicitly states: post office.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 3,
+              "max_numbers": 1
+            },
+            {
+              "id": "q3",
+              "type": "form_completion",
+              "prompt": "What is the seasonal fee in pounds?",
+              "accepted": [
+                "eighteen"
+              ],
+              "explanation": "The passage explicitly states: eighteen.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 3,
+              "max_numbers": 1
+            },
+            {
+              "id": "q4",
+              "type": "form_completion",
+              "prompt": "On which day is the introduction?",
+              "accepted": [
+                "Saturday"
+              ],
+              "explanation": "The passage explicitly states: Saturday.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 3,
+              "max_numbers": 1
+            },
+            {
+              "id": "q5",
+              "type": "form_completion",
+              "prompt": "What should new members bring?",
+              "accepted": [
+                "gloves"
+              ],
+              "explanation": "The passage explicitly states: gloves.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 3,
+              "max_numbers": 1
+            },
+            {
+              "id": "q6",
+              "type": "form_completion",
+              "prompt": "Which plants are not permitted?",
+              "accepted": [
+                "fruit trees"
+              ],
+              "explanation": "The passage explicitly states: fruit trees.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 3,
+              "max_numbers": 1
+            },
+            {
+              "id": "q7",
+              "type": "form_completion",
+              "prompt": "How many square metres is each plot?",
+              "accepted": [
+                "six"
+              ],
+              "explanation": "The passage explicitly states: six.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 3,
+              "max_numbers": 1
+            },
+            {
+              "id": "q8",
+              "type": "form_completion",
+              "prompt": "What is beside the shed?",
+              "accepted": [
+                "water tap"
+              ],
+              "explanation": "The passage explicitly states: water tap.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 3,
+              "max_numbers": 1
+            },
+            {
+              "id": "q9",
+              "type": "form_completion",
+              "prompt": "What is the coordinator’s name?",
+              "accepted": [
+                "Martin"
+              ],
+              "explanation": "The passage explicitly states: Martin.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 3,
+              "max_numbers": 1
+            },
+            {
+              "id": "q10",
+              "type": "form_completion",
+              "prompt": "In which month is the harvest picnic?",
+              "accepted": [
+                "September"
+              ],
+              "explanation": "The passage explicitly states: September.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 3,
+              "max_numbers": 1
+            }
+          ],
+          "transcript": "Demonstration audio. Part 1. Welcome to the Riverside Garden registration desk. My name is Anna. Our garden is on Willow Street, next to the old post office. New members pay eighteen pounds for the season. The next introduction session is on Saturday at ten in the morning. Please bring gloves; we provide the tools. You can grow vegetables and flowers, but fruit trees are not permitted because their roots require too much space. Each plot measures six square metres. There is a water tap beside the wooden shed. Members must lock the main gate when they leave. To report a problem, email our coordinator, whose name is Martin. We hold our annual harvest picnic in September. The garden closes at sunset each evening.",
+          "audio_file": "listening-1.wav"
+        }
+      ],
+      "answer_keys_reviewed": true,
+      "scoring": {
+        "reviewed": false
+      }
+    },
+    "tags": [
+      "Everyday life",
+      "Note completion"
+    ]
+  },
+  {
+    "slug": "reading-green-roofs-plus",
+    "title": "Take a closer look: green roofs",
+    "description": "Original demonstration material. Practise carefully, then explore the evidence behind every answer. This content is not a professionally validated IELTS test.",
+    "skill": "reading",
+    "test_type": "academic",
+    "duration_seconds": 1200,
+    "draft": {
+      "sections": [
+        {
+          "id": "part2",
+          "title": "A living roof",
+          "passage": "A. The Green Roof Project began at Northbridge College in 2020. Botanist Elena Ross wanted to discover whether planted roofs could reduce summer heat in small buildings. Her team compared two identical sheds, one with a planted roof and one with a bare metal roof. Both sheds faced south and neither contained air conditioning. Sensors measured the indoor temperature every fifteen minutes.\n\nB. The researchers chose sedum because its thick leaves retain water. Beneath the plants lay eight centimetres of growing material, followed by a drainage mat and a waterproof membrane. Rainwater left the roof through an outlet on its eastern edge. The planted roof needed watering during the first month, but after that it relied on rainfall except during unusually dry weeks.\n\nC. On the hottest afternoon, the shed with the planted roof was four degrees cooler. In winter, the temperature difference was smaller. The team recorded 18 species of insects on the roof, compared with five near the bare shed. These observations suggest a benefit for wildlife, but the researchers did not investigate birds or small mammals. No chemicals were applied to either roof.\n\nD. Engineer Oliver Chen checked the structure before planting. Wet soil adds weight, so he reinforced two support beams. He argued that structural checks should precede any installation. Ross agreed but said maintenance costs also deserved attention. The project used volunteer labour for planting, while a grant covered sensors and materials.\n\nE. The college plans to extend the study to a taller building. The current results cannot automatically be applied to every roof: wind and shade may change performance. Ross recommends local trials instead of a single national design. She has not claimed that green roofs can replace parks.",
+          "instructions": "Read carefully. Follow each question’s answer limit. Choices must match the wording shown.",
+          "questions": [
+            {
+              "id": "q15",
+              "type": "short_answer",
+              "prompt": "Which plant did the team choose?",
+              "accepted": [
+                "sedum"
+              ],
+              "explanation": "The passage explicitly states: sedum.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 3,
+              "max_numbers": 1
+            },
+            {
+              "id": "q16",
+              "type": "single_choice",
+              "prompt": "Why was this plant selected?",
+              "accepted": [
+                "Its leaves retain water"
+              ],
+              "explanation": "The passage explicitly states: Its leaves retain water.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "options": [
+                "Its flowers attract birds",
+                "Its leaves retain water",
+                "It grows without soil"
+              ]
+            },
+            {
+              "id": "q17",
+              "type": "summary_completion",
+              "prompt": "Sensors measured temperature every _____ minutes.",
+              "accepted": [
+                "fifteen"
+              ],
+              "explanation": "The passage explicitly states: fifteen.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 3,
+              "max_numbers": 1
+            },
+            {
+              "id": "q18",
+              "type": "true_false_not_given",
+              "prompt": "Both sheds had air conditioning.",
+              "accepted": [
+                "False"
+              ],
+              "explanation": "Neither shed contained air conditioning.",
+              "reference": "Use the corresponding paragraph or named location."
+            },
+            {
+              "id": "q19",
+              "type": "true_false_not_given",
+              "prompt": "The study investigated small mammals.",
+              "accepted": [
+                "False"
+              ],
+              "explanation": "Paragraph C explicitly says small mammals were not investigated.",
+              "reference": "Use the corresponding paragraph or named location."
+            },
+            {
+              "id": "q20",
+              "type": "matching_features",
+              "prompt": "Who checked the supporting structure?",
+              "accepted": [
+                "Oliver Chen"
+              ],
+              "explanation": "The passage explicitly states: Oliver Chen.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "options": [
+                "Elena Ross",
+                "Oliver Chen"
+              ]
+            },
+            {
+              "id": "q21",
+              "type": "short_answer",
+              "prompt": "How many support beams were reinforced?",
+              "accepted": [
+                "two"
+              ],
+              "explanation": "The passage explicitly states: two.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 3,
+              "max_numbers": 1
+            },
+            {
+              "id": "q22",
+              "type": "diagram_label",
+              "prompt": "Label the layer directly below the growing material.",
+              "accepted": [
+                "drainage mat"
+              ],
+              "explanation": "The passage explicitly states: drainage mat.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 2,
+              "max_numbers": 0,
+              "diagram": "Roof cross-section from top to bottom: plants → growing material → layer X → waterproof membrane. Label layer X."
+            },
+            {
+              "id": "q23",
+              "type": "short_answer",
+              "prompt": "On the hottest afternoon, the planted shed was _____ degrees cooler.",
+              "accepted": [
+                "four"
+              ],
+              "explanation": "The passage explicitly states: four.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 3,
+              "max_numbers": 1
+            },
+            {
+              "id": "q24",
+              "type": "matching_headings",
+              "prompt": "Choose a heading for paragraph E.",
+              "accepted": [
+                "Limits and future research"
+              ],
+              "explanation": "The passage explicitly states: Limits and future research.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "options": [
+                "Limits and future research",
+                "A study of park birds",
+                "New chemical treatments"
+              ]
+            },
+            {
+              "id": "q25",
+              "type": "yes_no_not_given",
+              "prompt": "Ross recommends the same design throughout the country.",
+              "accepted": [
+                "No"
+              ],
+              "explanation": "She recommends local trials instead of a single national design.",
+              "reference": "Use the corresponding paragraph or named location."
+            },
+            {
+              "id": "q26",
+              "type": "yes_no_not_given",
+              "prompt": "Ross believes schoolchildren should help with the next roof.",
+              "accepted": [
+                "Not Given"
+              ],
+              "explanation": "Schoolchildren are not mentioned.",
+              "reference": "Use the corresponding paragraph or named location."
+            },
+            {
+              "id": "q27",
+              "type": "short_answer",
+              "prompt": "Which source paid for sensors and materials?",
+              "accepted": [
+                "a grant"
+              ],
+              "explanation": "The passage explicitly states: a grant.",
+              "reference": "Use the corresponding paragraph or named location.",
+              "max_words": 3,
+              "max_numbers": 1
+            }
+          ]
+        }
+      ],
+      "answer_keys_reviewed": true,
+      "scoring": {
+        "reviewed": false
+      }
+    },
+    "premium": true,
+    "tags": [
+      "Environment",
+      "Matching"
+    ]
+  }
+]

@@ -1,0 +1,23 @@
+{
+  "/": {"title":"IELTS Practice Hub — A little practice, a bigger future","description":"Build your IELTS Listening, Reading, Writing and Speaking skills with focused practice, saved progress and thoughtful feedback.","public":true},
+  "/library": {"title":"IELTS Practice Library","description":"Explore free and premium Academic and General Training exercises across all four IELTS skills. Choose focused practice or timed skill mocks.","public":true},
+  "/sample": {"title":"Free IELTS Reading Sample","description":"Try an original reading exercise before creating an account. Explore question styles at your own pace.","public":true},
+  "/how-it-works": {"title":"How IELTS Practice Hub Works","description":"Choose a skill, practise at your pace and review your answers. Learn how saved drafts, mock timers and teacher feedback work.","public":true},
+  "/pricing": {"title":"Practice Plans","description":"Start with free IELTS exercises and progress tracking. Additional practice is available through administrator-granted access.","public":true},
+  "/help": {"title":"IELTS Practice Help","description":"Get help with practice sessions, saved answers, audio, recordings and teacher reviews.","public":true},
+  "/faq": {"title":"Frequently Asked Questions","description":"Answers about practice and mock modes, offline drafts, private recordings, human assessment and premium access.","public":true},
+  "/contact": {"title":"Contact Support","description":"Send a support enquiry about your IELTS practice account or exercises.","public":true},
+  "/privacy": {"title":"Privacy Notice","description":"Learn about account data, private speaking recordings, retention and account deletion requests.","public":true},
+  "/terms": {"title":"Practice Platform Terms","description":"Read the draft terms for this independent IELTS preparation platform and its demonstration learning material.","public":true},
+  "/login": {"title":"Log In","description":"Return to your learning space and pick up where you left off.","public":false},
+  "/register": {"title":"Create Your Account","description":"Create a free account to save your practice sessions and track your progress.","public":false},
+  "/forgot-password": {"title":"Reset Your Password","description":"Request access to your learning account.","public":false},
+  "/verify-email": {"title":"Verify Your Email","description":"Manage email verification for your account.","public":false},
+  "/dashboard": {"title":"Your Learning Dashboard","description":"Your practice sessions, goals and next steps.","public":false},
+  "/progress": {"title":"Your Progress","description":"Review your skill trends and completed practice.","public":false},
+  "/mistakes": {"title":"Your Mistake Notebook","description":"Return to saved questions and explanations.","public":false},
+  "/study-plan": {"title":"Your Study Plan","description":"A practice plan that fits your available time.","public":false},
+  "/settings": {"title":"Account and Learning Settings","description":"Manage your study preferences and account.","public":false},
+  "/onboarding": {"title":"Set Your Learning Goals","description":"Choose your target, test type and practice time.","public":false},
+  "/notifications": {"title":"Your Learning Updates","description":"Read updates about your teacher feedback.","public":false}
+}

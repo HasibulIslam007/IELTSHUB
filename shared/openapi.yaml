@@ -1,0 +1,1758 @@
+openapi: 3.1.0
+info:
+  title: IELTS Practice Hub API
+  version: 1.0.0
+  description: 'Same-origin practice API. Browser clients first GET /sanctum/csrf-cookie, send the session
+    cookie and URL-decoded XSRF-TOKEN cookie as X-XSRF-TOKEN on mutations. Session-only endpoints: register,
+    login, logout, forgot-password, reset-password and verification. Other protected endpoints also accept
+    a Sanctum bearer token. Roles and ownership are checked server-side. Demo material is not calibrated;
+    no estimated band is assigned to unreviewed objective exercises.'
+servers:
+- url: /api/v1
+security:
+- sessionCookie: []
+- bearerAuth: []
+paths:
+  /config:
+    get:
+      summary: Public brand, integration availability and plans
+      operationId: get_config
+      tags:
+      - config
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+        default:
+          description: Validation, authentication, authorization, conflict, rate limit or service error.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+      security: []
+  /tests:
+    get:
+      summary: Browse published tests without answer keys
+      operationId: get_tests
+      tags:
+      - tests
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                allOf:
+                - $ref: '#/components/schemas/Pagination'
+                - type: object
+                  properties:
+                    data:
+                      type: array
+                      items:
+                        $ref: '#/components/schemas/Test'
+        default:
+          description: Validation, authentication, authorization, conflict, rate limit or service error.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+      security: []
+      parameters:
+      - in: query
+        name: page
+        schema:
+          type: integer
+          minimum: 1
+      - in: query
+        name: search
+        schema:
+          type: string
+      - in: query
+        name: skill
+        schema:
+          type: string
+      - in: query
+        name: test_type
+        schema:
+          type: string
+      - in: query
+        name: collection_id
+        schema:
+          type: string
+      - in: query
+        name: access
+        schema:
+          type: string
+      - in: query
+        name: tag
+        schema:
+          type: string
+      - in: query
+        name: length
+        schema:
+          type: string
+      - in: query
+        name: status
+        schema:
+          type: string
+      - in: query
+        name: sort
+        schema:
+          type: string
+  /tests/{exam}:
+    get:
+      summary: Test metadata, sections and mode rules
+      operationId: get_tests_exam
+      tags:
+      - tests
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Test'
+        default:
+          description: Validation, authentication, authorization, conflict, rate limit or service error.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+      security: []
+      parameters:
+      - in: path
+        name: exam
+        required: true
+        schema:
+          type: integer
+  /sample:
+    get:
+      summary: Public sample with answers and explanations removed
+      operationId: get_sample
+      tags:
+      - sample
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Test'
+        default:
+          description: Validation, authentication, authorization, conflict, rate limit or service error.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+      security: []
+  /collections:
+    get:
+      summary: List collections and their test sequence
+      operationId: get_collections
+      tags:
+      - collections
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+        default:
+          description: Validation, authentication, authorization, conflict, rate limit or service error.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+      security: []
+  /contact:
+    post:
+      summary: Store a support enquiry; no email is sent
+      operationId: post_contact
+      tags:
+      - contact
+      responses:
+        '201':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+        default:
+          description: Validation, authentication, authorization, conflict, rate limit or service error.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+      security: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  maxLength: 100
+                email: &id001
+                  type: string
+                  format: email
+                message:
+                  type: string
+                  minLength: 10
+                  maxLength: 5000
+              required:
+              - name
+              - email
+              - message
+  /auth/register:
+    post:
+      summary: Create a student account and sign into a browser session
+      operationId: post_auth_register
+      tags:
+      - auth
+      responses:
+        '201':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  user:
+                    $ref: '#/components/schemas/User'
+                  email_delivery:
+                    type: string
+        default:
+          description: Validation, authentication, authorization, conflict, rate limit or service error.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+      security: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  maxLength: 100
+                email: *id001
+                password:
+                  type: string
+                  minLength: 10
+                password_confirmation:
+                  type: string
+              required:
+              - name
+              - email
+              - password
+              - password_confirmation
+  /auth/login:
+    post:
+      summary: Authenticate a browser session
+      operationId: post_auth_login
+      tags:
+      - auth
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  user:
+                    $ref: '#/components/schemas/User'
+        default:
+          description: Validation, authentication, authorization, conflict, rate limit or service error.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+      security: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                email: *id001
+                password:
+                  type: string
+              required:
+              - email
+              - password
+  /auth/logout:
+    post:
+      summary: Invalidate the browser session
+      operationId: post_auth_logout
+      tags:
+      - auth
+      responses:
+        '204':
+          description: Successful response
+        default:
+          description: Validation, authentication, authorization, conflict, rate limit or service error.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+      security:
+      - sessionCookie: []
+  /auth/forgot-password:
+    post:
+      summary: Request password reset; 503 until mail is configured
+      operationId: post_auth_forgot_password
+      tags:
+      - auth
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+        default:
+          description: Validation, authentication, authorization, conflict, rate limit or service error.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+      security: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                email: *id001
+              required:
+              - email
+  /auth/reset-password:
+    post:
+      summary: Reset password and revoke existing tokens and sessions
+      operationId: post_auth_reset_password
+      tags:
+      - auth
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+        default:
+          description: Validation, authentication, authorization, conflict, rate limit or service error.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+      security: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                email: *id001
+                token:
+                  type: string
+                password:
+                  type: string
+                  minLength: 10
+                password_confirmation:
+                  type: string
+              required:
+              - email
+              - token
+              - password
+              - password_confirmation
+  /auth/verification:
+    post:
+      summary: Request verification; 503 until mail is configured
+      operationId: post_auth_verification
+      tags:
+      - auth
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+        default:
+          description: Validation, authentication, authorization, conflict, rate limit or service error.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+      security:
+      - sessionCookie: []
+  /auth/token:
+    post:
+      summary: Create a 30-day mobile token
+      operationId: post_auth_token
+      tags:
+      - auth
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+        default:
+          description: Validation, authentication, authorization, conflict, rate limit or service error.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+      security: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                email: *id001
+                password:
+                  type: string
+                device_name:
+                  type: string
+                  maxLength: 100
+              required:
+              - email
+              - password
+              - device_name
+    delete:
+      summary: Revoke the current mobile token
+      operationId: delete_auth_token
+      tags:
+      - auth
+      responses:
+        '204':
+          description: Successful response
+        default:
+          description: Validation, authentication, authorization, conflict, rate limit or service error.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+  /profile:
+    get:
+      summary: Current user and active entitlements
+      operationId: get_profile
+      tags:
+      - profile
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  user:
+                    $ref: '#/components/schemas/User'
+                  entitlements:
+                    type: array
+                    items:
+                      type: object
+        default:
+          description: Validation, authentication, authorization, conflict, rate limit or service error.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+    put:
+      summary: Update learning preferences
+      operationId: put_profile
+      tags:
+      - profile
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  user:
+                    $ref: '#/components/schemas/User'
+        default:
+          description: Validation, authentication, authorization, conflict, rate limit or service error.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Profile'
+  /progress:
+    get:
+      summary: Skill trends, active and recent attempts, recommendations and study plan
+      operationId: get_progress
+      tags:
+      - progress
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+        default:
+          description: Validation, authentication, authorization, conflict, rate limit or service error.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+  /attempts:
+    get:
+      summary: Paginated attempts owned by the authenticated student
+      operationId: get_attempts
+      tags:
+      - attempts
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Pagination'
+        default:
+          description: Validation, authentication, authorization, conflict, rate limit or service error.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+  /tests/{exam}/attempts:
+    post:
+      summary: Start an attempt or replay the same start request
+      operationId: post_tests_exam_attempts
+      tags:
+      - tests
+      responses:
+        '201':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Attempt'
+        default:
+          description: Validation, authentication, authorization, conflict, rate limit or service error.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+      description: request_key is unique per user. Mock mode always selects all sections and sets a server
+        deadline. Premium content requires an active entitlement.
+      parameters:
+      - in: path
+        name: exam
+        required: true
+        schema:
+          type: integer
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/StartAttempt'
+  /attempts/{attempt}:
+    get:
+      summary: Load owned attempt; finalize it if its deadline passed
+      operationId: get_attempts_attempt
+      tags:
+      - attempts
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Attempt'
+        default:
+          description: Validation, authentication, authorization, conflict, rate limit or service error.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+      parameters:
+      - in: path
+        name: attempt
+        required: true
+        schema: &id002
+          type: string
+          format: uuid
+    put:
+      summary: Save answers, flags, notes and highlights
+      operationId: put_attempts_attempt
+      tags:
+      - attempts
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Attempt'
+        default:
+          description: Validation, authentication, authorization, conflict, rate limit or service error.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+      description: Send current revision and a fresh request_key. Retry the same body and key after a
+        lost response. A stale revision returns 409. Empty strings clear answers. Server marking happens
+        on submission.
+      parameters:
+      - in: path
+        name: attempt
+        required: true
+        schema: *id002
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Mutation'
+  /attempts/{attempt}/pause:
+    post:
+      summary: Pause an owned attempt
+      operationId: post_attempts_attempt_pause
+      tags:
+      - attempts
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Attempt'
+        default:
+          description: Validation, authentication, authorization, conflict, rate limit or service error.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+      description: Mock attempts cannot pause. A server deadline keeps running while the client is disconnected.
+        Late changes return 409; saved answers are finalized.
+      parameters:
+      - in: path
+        name: attempt
+        required: true
+        schema: *id002
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Mutation'
+  /attempts/{attempt}/resume:
+    post:
+      summary: Resume an owned attempt
+      operationId: post_attempts_attempt_resume
+      tags:
+      - attempts
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Attempt'
+        default:
+          description: Validation, authentication, authorization, conflict, rate limit or service error.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+      description: Mock attempts cannot pause. A server deadline keeps running while the client is disconnected.
+        Late changes return 409; saved answers are finalized.
+      parameters:
+      - in: path
+        name: attempt
+        required: true
+        schema: *id002
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Mutation'
+  /attempts/{attempt}/submit:
+    post:
+      summary: Submit an owned attempt
+      operationId: post_attempts_attempt_submit
+      tags:
+      - attempts
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Attempt'
+        default:
+          description: Validation, authentication, authorization, conflict, rate limit or service error.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+      description: Mock attempts cannot pause. A server deadline keeps running while the client is disconnected.
+        Late changes return 409; saved answers are finalized.
+      parameters:
+      - in: path
+        name: attempt
+        required: true
+        schema: *id002
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Mutation'
+  /attempts/{attempt}/recordings:
+    post:
+      summary: Upload a private speaking response
+      operationId: post_attempts_attempt_recordings
+      tags:
+      - attempts
+      responses:
+        '201':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  recording:
+                    type: object
+                  attempt:
+                    $ref: '#/components/schemas/Attempt'
+        default:
+          description: Validation, authentication, authorization, conflict, rate limit or service error.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+      parameters:
+      - in: path
+        name: attempt
+        required: true
+        schema: *id002
+      requestBody:
+        required: true
+        content:
+          multipart/form-data:
+            schema:
+              type: object
+              properties:
+                question_id:
+                  type: string
+                upload_key: *id002
+                recording:
+                  type: string
+                  format: binary
+                  description: 'Audio file up to 25 MB: WebM, Ogg, MP4/M4A, MP3 or WAV.'
+              required:
+              - question_id
+              - upload_key
+              - recording
+  /attempts/{attempt}/audio/{section}:
+    post:
+      summary: Start section audio; mock starts are recorded once
+      operationId: post_attempts_attempt_audio_section
+      tags:
+      - attempts
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  url:
+                    type: string
+                    format: uri
+        default:
+          description: Validation, authentication, authorization, conflict, rate limit or service error.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+      parameters:
+      - in: path
+        name: attempt
+        required: true
+        schema: *id002
+      - in: path
+        name: section
+        required: true
+        schema:
+          type: string
+  /attempts/{attempt}/audio/{section}/recover:
+    get:
+      summary: Recover an already-started section audio URL
+      operationId: get_attempts_attempt_audio_section_recover
+      tags:
+      - attempts
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  url:
+                    type: string
+                    format: uri
+        default:
+          description: Validation, authentication, authorization, conflict, rate limit or service error.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+      parameters:
+      - in: path
+        name: attempt
+        required: true
+        schema: *id002
+      - in: path
+        name: section
+        required: true
+        schema:
+          type: string
+  /recordings/{recording}/url:
+    get:
+      summary: Issue five-minute recording URL for owner, assigned reviewer or administrator
+      operationId: get_recordings_recording_url
+      tags:
+      - recordings
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  url:
+                    type: string
+                    format: uri
+        default:
+          description: Validation, authentication, authorization, conflict, rate limit or service error.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+      parameters:
+      - in: path
+        name: recording
+        required: true
+        schema: *id002
+  /attempts/{attempt}/audio/{section}/stream:
+    get:
+      summary: Stream authorized private audio with a valid signed URL
+      operationId: get_attempts_attempt_audio_section_stream
+      tags:
+      - attempts
+      responses:
+        '200':
+          description: Private audio stream
+          content:
+            application/octet-stream:
+              schema:
+                type: string
+                format: binary
+        default:
+          description: Validation, authentication, authorization, conflict, rate limit or service error.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+      parameters:
+      - in: path
+        name: attempt
+        required: true
+        schema: *id002
+      - in: path
+        name: section
+        required: true
+        schema:
+          type: string
+      - in: query
+        name: expires
+        required: true
+        schema:
+          type: integer
+      - in: query
+        name: signature
+        required: true
+        schema:
+          type: string
+  /recordings/{recording}/stream:
+    get:
+      summary: Stream authorized private audio with a valid signed URL
+      operationId: get_recordings_recording_stream
+      tags:
+      - recordings
+      responses:
+        '200':
+          description: Private audio stream
+          content:
+            application/octet-stream:
+              schema:
+                type: string
+                format: binary
+        default:
+          description: Validation, authentication, authorization, conflict, rate limit or service error.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+      parameters:
+      - in: path
+        name: recording
+        required: true
+        schema: *id002
+      - in: query
+        name: expires
+        required: true
+        schema:
+          type: integer
+      - in: query
+        name: signature
+        required: true
+        schema:
+          type: string
+  /bookmarks:
+    get:
+      summary: List own mistake notebook entries
+      operationId: get_bookmarks
+      tags:
+      - bookmarks
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+        default:
+          description: Validation, authentication, authorization, conflict, rate limit or service error.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+  /attempts/{attempt}/bookmarks:
+    post:
+      summary: Save a scored question in the mistake notebook
+      operationId: post_attempts_attempt_bookmarks
+      tags:
+      - attempts
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+        default:
+          description: Validation, authentication, authorization, conflict, rate limit or service error.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+      parameters:
+      - in: path
+        name: attempt
+        required: true
+        schema: *id002
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                question_id:
+                  type: string
+                note:
+                  type: string
+                  maxLength: 3000
+              required:
+              - question_id
+  /bookmarks/{bookmark}:
+    delete:
+      summary: Remove an owned bookmark
+      operationId: delete_bookmarks_bookmark
+      tags:
+      - bookmarks
+      responses:
+        '204':
+          description: Successful response
+        default:
+          description: Validation, authentication, authorization, conflict, rate limit or service error.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+      parameters:
+      - in: path
+        name: bookmark
+        required: true
+        schema:
+          type: integer
+  /notifications:
+    get:
+      summary: Return up to 30 recent notifications
+      operationId: get_notifications
+      tags:
+      - notifications
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+        default:
+          description: Validation, authentication, authorization, conflict, rate limit or service error.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+  /notifications/read:
+    post:
+      summary: Mark unread notifications as read
+      operationId: post_notifications_read
+      tags:
+      - notifications
+      responses:
+        '204':
+          description: Successful response
+        default:
+          description: Validation, authentication, authorization, conflict, rate limit or service error.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+  /account/export:
+    get:
+      summary: Download own account data as JSON
+      operationId: get_account_export
+      tags:
+      - account
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+        default:
+          description: Validation, authentication, authorization, conflict, rate limit or service error.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+  /account/deletion:
+    post:
+      summary: Request administrator-managed account deletion
+      operationId: post_account_deletion
+      tags:
+      - account
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+        default:
+          description: Validation, authentication, authorization, conflict, rate limit or service error.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                password:
+                  type: string
+              required:
+              - password
+  /reviews:
+    get:
+      summary: Paginated reviews; teachers see only assignments
+      operationId: get_reviews
+      tags:
+      - reviews
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Pagination'
+        default:
+          description: Validation, authentication, authorization, conflict, rate limit or service error.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+  /reviews/{assessment}:
+    get:
+      summary: Read a review and its submission; assigned teacher or admin
+      operationId: get_reviews_assessment
+      tags:
+      - reviews
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Assessment'
+        default:
+          description: Validation, authentication, authorization, conflict, rate limit or service error.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+      parameters:
+      - in: path
+        name: assessment
+        required: true
+        schema:
+          type: integer
+    put:
+      summary: Save or publish human rubric feedback
+      operationId: put_reviews_assessment
+      tags:
+      - reviews
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Assessment'
+        default:
+          description: Validation, authentication, authorization, conflict, rate limit or service error.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+      description: Publication requires feedback and four half-band criteria per task. Writing uses task1
+        and task2; Speaking uses speaking. Stale revisions return 409. Published feedback creates a student
+        notification.
+      parameters:
+      - in: path
+        name: assessment
+        required: true
+        schema:
+          type: integer
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Review'
+  /reviews/{assessment}/assign:
+    post:
+      summary: Admin assigns an active teacher
+      operationId: post_reviews_assessment_assign
+      tags:
+      - reviews
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Assessment'
+        default:
+          description: Validation, authentication, authorization, conflict, rate limit or service error.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+      parameters:
+      - in: path
+        name: assessment
+        required: true
+        schema:
+          type: integer
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                reviewer_id:
+                  type: integer
+              required:
+              - reviewer_id
+  /admin/tests/{exam}/publish:
+    post:
+      summary: Admin validates and publishes an immutable content version
+      operationId: post_admin_tests_exam_publish
+      tags:
+      - admin
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+        default:
+          description: Validation, authentication, authorization, conflict, rate limit or service error.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+      parameters:
+      - in: path
+        name: exam
+        required: true
+        schema:
+          type: integer
+  /admin/tests/{exam}/export:
+    get:
+      summary: Admin exports test content for import
+      operationId: get_admin_tests_exam_export
+      tags:
+      - admin
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+        default:
+          description: Validation, authentication, authorization, conflict, rate limit or service error.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+      parameters:
+      - in: path
+        name: exam
+        required: true
+        schema:
+          type: integer
+  /admin/import:
+    post:
+      summary: Admin validates up to 50 complete test definitions before optional atomic import
+      operationId: post_admin_import
+      tags:
+      - admin
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+        default:
+          description: Validation, authentication, authorization, conflict, rate limit or service error.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                tests:
+                  type: array
+                  items:
+                    type: object
+                commit: &id003
+                  type: boolean
+              required:
+              - tests
+  /billing/checkout:
+    post:
+      summary: Unavailable until a payment provider is implemented
+      operationId: post_billing_checkout
+      tags:
+      - billing
+      responses:
+        '503':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+        default:
+          description: Validation, authentication, authorization, conflict, rate limit or service error.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+      security: []
+      description: No charges, webhook events or entitlements are processed.
+  /billing/webhook:
+    post:
+      summary: Unavailable until a payment provider is implemented
+      operationId: post_billing_webhook
+      tags:
+      - billing
+      responses:
+        '503':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+        default:
+          description: Validation, authentication, authorization, conflict, rate limit or service error.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+      security: []
+      description: No charges, webhook events or entitlements are processed.
+components:
+  securitySchemes:
+    sessionCookie:
+      type: apiKey
+      in: cookie
+      name: ielts_practice_hub_session
+      description: Laravel session cookie; configured name may differ. Browser mutations also require
+        X-XSRF-TOKEN.
+    bearerAuth:
+      type: http
+      scheme: bearer
+  schemas:
+    Error:
+      type: object
+      properties:
+        message:
+          type: string
+        errors:
+          type: object
+          additionalProperties:
+            type: array
+            items:
+              type: string
+      required:
+      - message
+    User:
+      type: object
+      properties:
+        id:
+          type: integer
+        name:
+          type: string
+        email: *id001
+        role:
+          type: string
+          enum:
+          - student
+          - teacher
+          - admin
+        profile:
+          oneOf:
+          - $ref: '#/components/schemas/Profile'
+          - type: 'null'
+        email_verified_at:
+          type:
+          - string
+          - 'null'
+          format: date-time
+      required:
+      - id
+      - name
+      - email
+      - role
+    Profile:
+      type: object
+      properties:
+        test_type:
+          type: string
+          enum:
+          - academic
+          - general
+        target_band:
+          type: number
+          minimum: 1
+          maximum: 9
+          multipleOf: 0.5
+        exam_date:
+          type:
+          - string
+          - 'null'
+          format: date
+        daily_minutes:
+          type: integer
+          minimum: 5
+          maximum: 240
+        current_level:
+          type:
+          - number
+          - 'null'
+          minimum: 1
+          maximum: 9
+          multipleOf: 0.5
+        reminders: *id003
+      required:
+      - test_type
+      - target_band
+      - daily_minutes
+    Question:
+      type: object
+      properties:
+        id:
+          type: string
+        type:
+          type: string
+        prompt:
+          type: string
+        options:
+          type: array
+          items:
+            type: string
+        max_words:
+          type: integer
+        max_numbers:
+          type: integer
+        select_count:
+          type: integer
+        min_words:
+          type: integer
+        diagram:
+          type: string
+        task:
+          type: integer
+        preparation_seconds:
+          type: integer
+        response_seconds:
+          type: integer
+      required:
+      - id
+      - type
+      - prompt
+    Section:
+      type: object
+      properties:
+        id:
+          type: string
+        title:
+          type: string
+        instructions:
+          type: string
+        passage:
+          type:
+          - string
+          - 'null'
+        audio_asset_id:
+          type:
+          - integer
+          - 'null'
+        questions:
+          type: array
+          items:
+            $ref: '#/components/schemas/Question'
+      required:
+      - id
+      - title
+      - questions
+    Test:
+      type: object
+      properties:
+        id:
+          type: integer
+        slug:
+          type: string
+        title:
+          type: string
+        description:
+          type: string
+        skill:
+          type: string
+          enum:
+          - reading
+          - listening
+          - writing
+          - speaking
+        test_type:
+          type: string
+          enum:
+          - academic
+          - general
+        premium: *id003
+        demo: *id003
+        sample: *id003
+        duration_seconds:
+          type: integer
+        question_count:
+          type: integer
+        can_access: *id003
+        sections:
+          type: array
+          items:
+            type: object
+            properties:
+              id:
+                type: string
+              title:
+                type: string
+              question_count:
+                type: integer
+        content:
+          type: object
+          properties:
+            sections:
+              type: array
+              items:
+                $ref: '#/components/schemas/Section'
+      required:
+      - id
+      - title
+      - skill
+    Answers:
+      type: object
+      additionalProperties:
+        oneOf:
+        - type: string
+        - type: array
+          items:
+            type: string
+    Attempt:
+      type: object
+      properties:
+        id: *id002
+        user_id:
+          type: integer
+        exam_id:
+          type: integer
+        mode:
+          type: string
+          enum:
+          - practice
+          - mock
+        status:
+          type: string
+          enum:
+          - active
+          - paused
+          - submitted
+          - awaiting_review
+          - reviewed
+        revision:
+          type: integer
+        answers:
+          $ref: '#/components/schemas/Answers'
+        flags:
+          type: array
+          items:
+            type: string
+        notes:
+          type: object
+          additionalProperties:
+            type: string
+        highlights:
+          type: object
+          additionalProperties:
+            type: string
+        section_ids:
+          type: array
+          items:
+            type: string
+        deadline_at:
+          type:
+          - string
+          - 'null'
+          format: date-time
+        server_now:
+          type: string
+          format: date-time
+        content:
+          type: object
+          properties:
+            sections:
+              type: array
+              items:
+                $ref: '#/components/schemas/Section'
+        test:
+          type: object
+        result:
+          type:
+          - object
+          - 'null'
+        recordings:
+          type: array
+          items:
+            type: object
+        assessment:
+          $ref: '#/components/schemas/Assessment'
+      required:
+      - id
+      - status
+      - revision
+      - answers
+      - content
+    Mutation:
+      type: object
+      properties:
+        revision:
+          type: integer
+          minimum: 0
+        request_key: *id002
+        answers:
+          $ref: '#/components/schemas/Answers'
+        flags:
+          type: array
+          items:
+            type: string
+            maxLength: 80
+        notes:
+          type: object
+          additionalProperties:
+            type: string
+            maxLength: 5000
+        highlights:
+          type: object
+          additionalProperties:
+            type: string
+            maxLength: 3000
+      required:
+      - revision
+      - request_key
+    StartAttempt:
+      type: object
+      properties:
+        mode:
+          type: string
+          enum:
+          - practice
+          - mock
+        request_key: *id002
+        timed: *id003
+        section_ids:
+          type: array
+          items:
+            type: string
+      required:
+      - mode
+      - request_key
+    Assessment:
+      type: object
+      properties:
+        id:
+          type: integer
+        attempt_id: *id002
+        reviewer_id:
+          type:
+          - integer
+          - 'null'
+        status:
+          type: string
+          enum:
+          - awaiting_review
+          - draft
+          - published
+        revision:
+          type: integer
+        criteria:
+          type:
+          - object
+          - 'null'
+        feedback:
+          type:
+          - string
+          - 'null'
+        band:
+          type:
+          - number
+          - string
+          - 'null'
+      required:
+      - id
+      - attempt_id
+      - status
+    Review:
+      type: object
+      properties:
+        revision:
+          type: integer
+          minimum: 0
+        criteria:
+          type: object
+          additionalProperties:
+            type: object
+            additionalProperties:
+              type: number
+              minimum: 0
+              maximum: 9
+              multipleOf: 0.5
+        feedback:
+          type: string
+          maxLength: 20000
+        publish: *id003
+        correction_reason:
+          type: string
+          maxLength: 1000
+      required:
+      - revision
+    Pagination:
+      type: object
+      properties:
+        data:
+          type: array
+          items:
+            type: object
+        total:
+          type: integer
+        current_page:
+          type: integer
+        last_page:
+          type: integer
+        from:
+          type:
+          - integer
+          - 'null'
+        to:
+          type:
+          - integer
+          - 'null'
