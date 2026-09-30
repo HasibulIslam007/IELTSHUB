@@ -95,6 +95,10 @@ The application sends CSP, `X-Frame-Options: DENY`, `nosniff`, a strict-origin r
 
 The learner policy uses a per-response script nonce and same-origin assets. Development alone allows the fixed local Vite origin. Filament/Livewire routes use `unsafe-inline` and `unsafe-eval` for current Alpine/Filament compatibility; this is a documented CSP limitation, not a claim of a fully strict admin policy. Inline styles remain allowed for dynamic layouts. Static files served directly by Nginx/Apache bypass Laravel middleware; configure corresponding headers at the web server if required.
 
+The policy is only sent with responses that render a document. `api/*`, `livewire/*` and `sanctum/*` responses still receive the remaining headers but no Content-Security-Policy and no per-response nonce, because they never produce a document. Workspace avatars are rendered inline by `App\Filament\AvatarProviders\InitialsAvatarProvider`; the default provider would call `ui-avatars.com`, which the policy blocks and which you should not re-enable without also widening `img-src`.
+
+Set `BOOST_ENABLED=false` in every environment that is not local development. Laravel Boost is a development dependency whose middleware injects a browser console logger into any HTML response whenever `APP_ENV=local` or `APP_DEBUG=true`, posting browser logs to `/_boost/browser-logs`. Installing production code with `--no-dev` removes the package entirely; the flag protects staging hosts that intentionally run with debug enabled.
+
 Titles, descriptions, canonical links and Open Graph/Twitter metadata render in the initial HTML and update during React navigation. `/sitemap.xml` includes public pages and published tests; `/robots.txt` points to it. Private pages use noindex metadata/headers. `APP_URL` is the canonical origin. Metadata is rendered server-side; the full React page content still requires JavaScript.
 
 ## Backups, logs and rollback
