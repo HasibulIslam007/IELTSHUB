@@ -1,0 +1,13 @@
+.DS_Store
+.local/
+node_modules/
+backend/vendor/
+backend/.env
+backend/public/build/
+backend/storage/*.key
+backend/storage/logs/*
+backend/storage/app/private/*
+!backend/storage/app/private/.gitignore
+playwright-report/
+test-results/
+.env
