@@ -2,8 +2,10 @@
 
 namespace Tests\Feature;
 
+use App\Filament\AvatarProviders\InitialsAvatarProvider;
 use App\Models\Exam;
 use App\Models\User;
+use Filament\Facades\Filament;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
 
@@ -76,5 +78,19 @@ class SeoAndSecurityTest extends TestCase
                 $this->assertStringContainsString($path.':', $spec);
             }
         }
+    }
+
+    public function test_workspace_avatars_are_inline_and_never_call_a_third_party_service(): void
+    {
+        $provider = Filament::getDefaultAvatarProvider();
+        $this->assertSame(InitialsAvatarProvider::class, $provider);
+
+        $avatar = app($provider)->get(User::factory()->create(['name' => 'Ada Lovelace']));
+        $this->assertStringStartsWith('data:image/svg+xml;base64,', $avatar);
+        $this->assertStringNotContainsString('http', $avatar);
+        $this->assertStringContainsString(
+            '>A L<',
+            base64_decode(substr($avatar, strlen('data:image/svg+xml;base64,')), true),
+        );
     }
 }
